@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "aggregate_and_binding_checks": 2196,
+  "microsoft_schema_documents": 75,
+  "scope": "Published aggregates, embedded M payloads, independent scenario arithmetic, denominators, DAX guard structure, visual field bindings.",
+  "runtime": "Desktop refresh, visual rendering and slicer interaction are recorded separately in docs/dashboard_workflow.md."
+}

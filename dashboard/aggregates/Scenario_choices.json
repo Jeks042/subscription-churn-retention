@@ -1,0 +1,56 @@
+[
+  {
+    "name": "adverse_1pp",
+    "effect_type": "absolute",
+    "effect": -0.01,
+    "margin": 0.5,
+    "contact_cost": 0.5,
+    "incentive_cost": 10,
+    "redemption": 0.3
+  },
+  {
+    "name": "downside",
+    "effect_type": "conditional",
+    "effect": 0.05,
+    "margin": 0.3,
+    "contact_cost": 1,
+    "incentive_cost": 10,
+    "redemption": 0.6
+  },
+  {
+    "name": "zero_effect",
+    "effect_type": "conditional",
+    "effect": 0,
+    "margin": 0.5,
+    "contact_cost": 0.5,
+    "incentive_cost": 10,
+    "redemption": 0.3
+  },
+  {
+    "name": "reference_10pct_save",
+    "effect_type": "conditional",
+    "effect": 0.1,
+    "margin": 0.5,
+    "contact_cost": 0.5,
+    "incentive_cost": 10,
+    "redemption": 0.3
+  },
+  {
+    "name": "reference_20pct_save",
+    "effect_type": "conditional",
+    "effect": 0.2,
+    "margin": 0.5,
+    "contact_cost": 0.5,
+    "incentive_cost": 10,
+    "redemption": 0.3
+  },
+  {
+    "name": "optimistic",
+    "effect_type": "conditional",
+    "effect": 0.2,
+    "margin": 0.7,
+    "contact_cost": 0.25,
+    "incentive_cost": 5,
+    "redemption": 0.3
+  }
+]

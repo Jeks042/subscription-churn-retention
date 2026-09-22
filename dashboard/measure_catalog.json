@@ -1,0 +1,334 @@
+{
+  "Overview": [
+    {
+      "name": "Eligible customers",
+      "expression": "IF(COUNTROWS('Overview') = 1, SELECTEDVALUE('Overview'[rows]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / combined / calibrated"
+    },
+    {
+      "name": "Reconstructed churn",
+      "expression": "IF(COUNTROWS('Overview') = 1, SELECTEDVALUE('Overview'[churn]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / combined / calibrated"
+    },
+    {
+      "name": "Observed churn rate",
+      "expression": "IF(COUNTROWS('Overview') = 1, SELECTEDVALUE('Overview'[prevalence]))",
+      "formatString": "0.00%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / combined / calibrated"
+    },
+    {
+      "name": "Top 10% contacts",
+      "expression": "IF(COUNTROWS('Overview') = 1, SELECTEDVALUE('Overview'[contacts_10pct]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / combined / calibrated"
+    },
+    {
+      "name": "Churn captured",
+      "expression": "IF(COUNTROWS('Overview') = 1, SELECTEDVALUE('Overview'[recall_10pct]))",
+      "formatString": "0.00%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / combined / calibrated"
+    },
+    {
+      "name": "List precision",
+      "expression": "IF(COUNTROWS('Overview') = 1, SELECTEDVALUE('Overview'[precision_10pct]))",
+      "formatString": "0.00%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / combined / calibrated"
+    },
+    {
+      "name": "Mean predicted risk",
+      "expression": "IF(COUNTROWS('Overview') = 1, SELECTEDVALUE('Overview'[mean_prediction]))",
+      "formatString": "0.00%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / combined / calibrated"
+    }
+  ],
+  "Models": [
+    {
+      "name": "Average precision",
+      "expression": "IF(COUNTROWS('Models') = 1, SELECTEDVALUE('Models'[average_precision]))",
+      "formatString": "0.000",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / calibrated"
+    },
+    {
+      "name": "ROC AUC",
+      "expression": "IF(COUNTROWS('Models') = 1, SELECTEDVALUE('Models'[roc_auc]))",
+      "formatString": "0.000",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / calibrated"
+    },
+    {
+      "name": "Log loss",
+      "expression": "IF(COUNTROWS('Models') = 1, SELECTEDVALUE('Models'[log_loss]))",
+      "formatString": "0.0000",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / calibrated"
+    },
+    {
+      "name": "Brier",
+      "expression": "IF(COUNTROWS('Models') = 1, SELECTEDVALUE('Models'[raw_brier]))",
+      "formatString": "0.0000",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / calibrated"
+    }
+  ],
+  "Capacity": [
+    {
+      "name": "Contacts",
+      "expression": "IF(COUNTROWS('Capacity') = 1, SELECTEDVALUE('Capacity'[raw_contacts]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / combined calibrated and uncertainty"
+    },
+    {
+      "name": "Churn captured count",
+      "expression": "IF(COUNTROWS('Capacity') = 1, SELECTEDVALUE('Capacity'[tp]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / combined calibrated and uncertainty"
+    },
+    {
+      "name": "Precision",
+      "expression": "IF(COUNTROWS('Capacity') = 1, SELECTEDVALUE('Capacity'[raw_precision]))",
+      "formatString": "0.0%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / combined calibrated and uncertainty"
+    },
+    {
+      "name": "Recall",
+      "expression": "IF(COUNTROWS('Capacity') = 1, SELECTEDVALUE('Capacity'[raw_recall]))",
+      "formatString": "0.0%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / combined calibrated and uncertainty"
+    },
+    {
+      "name": "Lift",
+      "expression": "IF(COUNTROWS('Capacity') = 1, SELECTEDVALUE('Capacity'[raw_lift]))",
+      "formatString": "0.00",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / combined calibrated and uncertainty"
+    },
+    {
+      "name": "Recall lower 95%",
+      "expression": "IF(COUNTROWS('Capacity') = 1, SELECTEDVALUE('Capacity'[recall_low]))",
+      "formatString": "0.0%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / combined calibrated and uncertainty"
+    },
+    {
+      "name": "Recall upper 95%",
+      "expression": "IF(COUNTROWS('Capacity') = 1, SELECTEDVALUE('Capacity'[recall_high]))",
+      "formatString": "0.0%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / combined calibrated and uncertainty"
+    }
+  ],
+  "Calibration": [
+    {
+      "name": "Bin customers",
+      "expression": "IF(COUNTROWS('Calibration') = 1, SELECTEDVALUE('Calibration'[rows]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / combined / calibration_bins (fixed width)"
+    },
+    {
+      "name": "Predicted",
+      "expression": "IF(COUNTROWS('Calibration') = 1, SELECTEDVALUE('Calibration'[mean_prediction]))",
+      "formatString": "0.0%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / combined / calibration_bins (fixed width)"
+    },
+    {
+      "name": "Observed",
+      "expression": "IF(COUNTROWS('Calibration') = 1, SELECTEDVALUE('Calibration'[churn_rate]))",
+      "formatString": "0.0%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / models / combined / calibration_bins (fixed width)"
+    }
+  ],
+  "Segments": [
+    {
+      "name": "Segment customers",
+      "expression": "IF(COUNTROWS('Segments') = 1, SELECTEDVALUE('Segments'[rows]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / segments_selected_model; global top 10% policy"
+    },
+    {
+      "name": "Segment observed",
+      "expression": "IF(COUNTROWS('Segments') = 1, SELECTEDVALUE('Segments'[prevalence]))",
+      "formatString": "0.0%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / segments_selected_model; global top 10% policy"
+    },
+    {
+      "name": "Segment predicted",
+      "expression": "IF(COUNTROWS('Segments') = 1, SELECTEDVALUE('Segments'[mean_prediction]))",
+      "formatString": "0.0%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / segments_selected_model; global top 10% policy"
+    },
+    {
+      "name": "Segment AUC",
+      "expression": "IF(COUNTROWS('Segments') = 1, SELECTEDVALUE('Segments'[roc_auc]))",
+      "formatString": "0.000",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / segments_selected_model; global top 10% policy"
+    },
+    {
+      "name": "Global list contacts",
+      "expression": "IF(COUNTROWS('Segments') = 1, SELECTEDVALUE('Segments'[global_contacts]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / segments_selected_model; global top 10% policy"
+    },
+    {
+      "name": "Contact share of segment",
+      "expression": "IF(COUNTROWS('Segments') = 1, SELECTEDVALUE('Segments'[global_contact_rate]))",
+      "formatString": "0.0%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / segments_selected_model; global top 10% policy"
+    }
+  ],
+  "Cohorts": [
+    {
+      "name": "Mature snapshots",
+      "expression": "IF(COUNTROWS('Cohorts') = 1, SELECTEDVALUE('Cohorts'[mature_eligible]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. sql_build_summary.json / cohorts; snapshot denominators, people recur"
+    },
+    {
+      "name": "Cohort churn",
+      "expression": "IF(COUNTROWS('Cohorts') = 1, SELECTEDVALUE('Cohorts'[churn]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. sql_build_summary.json / cohorts; snapshot denominators, people recur"
+    },
+    {
+      "name": "Cohort churn rate",
+      "expression": "IF(COUNTROWS('Cohorts') = 1, SELECTEDVALUE('Cohorts'[churn_rate]))",
+      "formatString": "0.0%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. sql_build_summary.json / cohorts; snapshot denominators, people recur"
+    }
+  ],
+  "Source": [
+    {
+      "name": "Matched customers",
+      "expression": "IF(COUNTROWS('Source') = 1, SELECTEDVALUE('Source'[rows]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / source_sensitivity / holdout; identical 679309 customers, fixed scores"
+    },
+    {
+      "name": "Matched churn",
+      "expression": "IF(COUNTROWS('Source') = 1, SELECTEDVALUE('Source'[churn]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / source_sensitivity / holdout; identical 679309 customers, fixed scores"
+    },
+    {
+      "name": "Matched churn rate",
+      "expression": "IF(COUNTROWS('Source') = 1, SELECTEDVALUE('Source'[prevalence]))",
+      "formatString": "0.00%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / source_sensitivity / holdout; identical 679309 customers, fixed scores"
+    },
+    {
+      "name": "Matched precision",
+      "expression": "IF(COUNTROWS('Source') = 1, SELECTEDVALUE('Source'[precision_10pct]))",
+      "formatString": "0.00%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / source_sensitivity / holdout; identical 679309 customers, fixed scores"
+    },
+    {
+      "name": "Matched recall",
+      "expression": "IF(COUNTROWS('Source') = 1, SELECTEDVALUE('Source'[recall_10pct]))",
+      "formatString": "0.00%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. model_evaluation.json / source_sensitivity / holdout; identical 679309 customers, fixed scores"
+    }
+  ],
+  "Profiles": [
+    {
+      "name": "Selected contacts",
+      "expression": "IF(COUNTROWS('Profiles') = 1, SELECTEDVALUE('Profiles'[contacts]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. commercial_evaluation.json / policy_profiles; 60 mutually exclusive alternatives"
+    },
+    {
+      "name": "Historical or expected churn units",
+      "expression": "IF(COUNTROWS('Profiles') = 1, SELECTEDVALUE('Profiles'[churn_units]))",
+      "formatString": "#,0.0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. commercial_evaluation.json / policy_profiles; 60 mutually exclusive alternatives"
+    },
+    {
+      "name": "Reference conditional break-even",
+      "expression": "IF(COUNTROWS('Profiles') = 1, SELECTEDVALUE('Profiles'[break_even_conditional_save]))",
+      "formatString": "0.00%",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. commercial_evaluation.json / policy_profiles; 60 mutually exclusive alternatives"
+    },
+    {
+      "name": "Selected population",
+      "expression": "IF(COUNTROWS('Profiles') = 1, SELECTEDVALUE('Profiles'[eligible_population]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. commercial_evaluation.json / policy_profiles; 60 mutually exclusive alternatives"
+    }
+  ],
+  "Scenarios": [
+    {
+      "name": "Hypothetical net CU",
+      "expression": "IF(COUNTROWS('Profiles') = 1 && COUNTROWS('Scenario choices') = 1 && COUNTROWS('Scenarios') = 1, SELECTEDVALUE('Scenarios'[net_contribution_cu]))",
+      "formatString": "#,0;−#,0;0",
+      "description": "IF(COUNTROWS('Profiles') = 1 && COUNTROWS('Scenario choices') = 1 && COUNTROWS('Scenarios') = 1, SELECTEDVALUE('Scenarios'[net_contribution_cu]))"
+    },
+    {
+      "name": "Assumed cost CU",
+      "expression": "IF(COUNTROWS('Profiles') = 1 && COUNTROWS('Scenario choices') = 1 && COUNTROWS('Scenarios') = 1, SELECTEDVALUE('Scenarios'[total_cost_cu]))",
+      "formatString": "#,0",
+      "description": "IF(COUNTROWS('Profiles') = 1 && COUNTROWS('Scenario choices') = 1 && COUNTROWS('Scenarios') = 1, SELECTEDVALUE('Scenarios'[total_cost_cu]))"
+    },
+    {
+      "name": "Scenario conditional break-even",
+      "expression": "IF(COUNTROWS('Profiles') = 1 && COUNTROWS('Scenario choices') = 1 && COUNTROWS('Scenarios') = 1, SELECTEDVALUE('Scenarios'[break_even_conditional_save]))",
+      "formatString": "0.00%",
+      "description": "IF(COUNTROWS('Profiles') = 1 && COUNTROWS('Scenario choices') = 1 && COUNTROWS('Scenarios') = 1, SELECTEDVALUE('Scenarios'[break_even_conditional_save]))"
+    },
+    {
+      "name": "Assumed absolute effect",
+      "expression": "IF(COUNTROWS('Profiles') = 1 && COUNTROWS('Scenario choices') = 1 && COUNTROWS('Scenarios') = 1, SELECTEDVALUE('Scenarios'[assumed_absolute_effect]))",
+      "formatString": "0.00%",
+      "description": "IF(COUNTROWS('Profiles') = 1 && COUNTROWS('Scenario choices') = 1 && COUNTROWS('Scenarios') = 1, SELECTEDVALUE('Scenarios'[assumed_absolute_effect]))"
+    },
+    {
+      "name": "Selection status",
+      "expression": "IF(COUNTROWS('Profiles') = 1 && COUNTROWS('Scenario choices') = 1 && COUNTROWS('Scenarios') = 1, \"One alternative selected | hypothetical CU\", \"Select one source, capacity, policy, value and scenario\")",
+      "formatString": "",
+      "description": "IF(COUNTROWS('Profiles') = 1 && COUNTROWS('Scenario choices') = 1 && COUNTROWS('Scenarios') = 1, \"One alternative selected | hypothetical CU\", \"Select one source, capacity, policy, value and scenario\")"
+    }
+  ],
+  "Comparison": [
+    {
+      "name": "Scenario net CU",
+      "expression": "IF(COUNTROWS('Comparison') = 1, SELECTEDVALUE('Comparison'[net_contribution_cu]))",
+      "formatString": "#,0;−#,0;0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. commercial_evaluation.json / scenarios; matched, 10%, risk-only, uniform; 12 alternatives"
+    },
+    {
+      "name": "Baseline net CU",
+      "expression": "CALCULATE([Scenario net CU], 'Comparison'[source] = \"Baseline\")",
+      "formatString": "#,0;−#,0;0",
+      "description": "CALCULATE([Scenario net CU], 'Comparison'[source] = \"Baseline\")"
+    },
+    {
+      "name": "Full union net CU",
+      "expression": "CALCULATE([Scenario net CU], 'Comparison'[source] = \"Full union\")",
+      "formatString": "#,0;−#,0;0",
+      "description": "CALCULATE([Scenario net CU], 'Comparison'[source] = \"Full union\")"
+    }
+  ],
+  "Power": [
+    {
+      "name": "Planned enrolments",
+      "expression": "IF(COUNTROWS('Power') = 1, SELECTEDVALUE('Power'[total_enrolment]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. experiment_power.json / binary_endpoint_power; 24 alternative planning designs"
+    }
+  ],
+  "Commercial power": [
+    {
+      "name": "Commercial enrolments",
+      "expression": "IF(COUNTROWS('Commercial power') = 1, SELECTEDVALUE('Commercial power'[total_enrolment]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. experiment_power.json / commercial_margin_power; two alternative planning designs"
+    },
+    {
+      "name": "Expected treatment cost CU",
+      "expression": "IF(COUNTROWS('Commercial power') = 1, SELECTEDVALUE('Commercial power'[reference_expected_treatment_cost_cu]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. experiment_power.json / commercial_margin_power; two alternative planning designs"
+    }
+  ],
+  "Sensitivity grid": [
+    {
+      "name": "Grid net CU",
+      "expression": "IF(COUNTROWS('Sensitivity grid') = 1, SELECTEDVALUE('Sensitivity grid'[net_contribution_cu]))",
+      "formatString": "#,0",
+      "description": "Single aggregate row only; blank for ambiguous alternatives or totals. commercial_sensitivity_grid.json; fixed matched risk-only 10% uniform scope"
+    }
+  ]
+}

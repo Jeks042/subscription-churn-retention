@@ -1,0 +1,201 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 854,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 43.383050014693708,
+            "y": 359
+          },
+          "nodeIndex": "Calibration",
+          "nodeLineageTag": "00e819f6-078a-4b62-b9c9-455fa41cc94e",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 1
+        },
+        {
+          "location": {
+            "x": 319.38305001469371,
+            "y": 354
+          },
+          "nodeIndex": "Capacity",
+          "nodeLineageTag": "4ebbbfb3-e06e-4b78-9718-915ca01b71bc",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 599.38305001469371,
+            "y": 356
+          },
+          "nodeIndex": "Cohorts",
+          "nodeLineageTag": "6a9e148c-e4c8-453a-92ba-0ca9444972f7",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 924.38305001469371,
+            "y": 0
+          },
+          "nodeIndex": "Commercial power",
+          "nodeLineageTag": "a9268890-5206-4362-a605-e9f9e8587f94",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 924.38305001469371,
+            "y": 357
+          },
+          "nodeIndex": "Comparison",
+          "nodeLineageTag": "39b257fe-6128-490e-9f52-3b9e95365040",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 1214.3830500146937,
+            "y": 0
+          },
+          "nodeIndex": "Models",
+          "nodeLineageTag": "6b26ebe8-bcf6-450f-bd8e-671e9cb35b12",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 13
+        },
+        {
+          "location": {
+            "x": 1213.3830500146937,
+            "y": 354
+          },
+          "nodeIndex": "Overview",
+          "nodeLineageTag": "d2d508da-2be9-4e86-82cd-91c7e6226b35",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1516.3830500146937,
+            "y": 4
+          },
+          "nodeIndex": "Power",
+          "nodeLineageTag": "ab803c2e-b73c-41d8-80d1-e8a6d7819dca",
+          "size": {
+            "height": 296,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 618.38305001469371,
+            "y": -41.422348979922305
+          },
+          "nodeIndex": "Profiles",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 50,
+            "y": 14.562761799677247
+          },
+          "nodeIndex": "Scenario choices",
+          "size": {
+            "height": 248,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 334.20156119318523,
+            "y": -8.5776510200776954
+          },
+          "nodeIndex": "Scenarios",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1508.3830500146937,
+            "y": 351
+          },
+          "nodeIndex": "Segments",
+          "nodeLineageTag": "28d67656-8136-46c0-8648-a4ddde1d0e08",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 1801.3830500146937,
+            "y": 4
+          },
+          "nodeIndex": "Sensitivity grid",
+          "nodeLineageTag": "059c7e5c-5d4d-49d5-954f-c8ab20a1bb09",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 1792.3830500146937,
+            "y": 354
+          },
+          "nodeIndex": "Source",
+          "nodeLineageTag": "1b9d41e8-6fa5-4dcb-916b-c5b15f6b7e68",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 14
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 100,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false,
+      "tablesLocked": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

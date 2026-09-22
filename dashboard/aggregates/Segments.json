@@ -1,0 +1,90 @@
+[
+  {
+    "segment": "no_listening_90d",
+    "label": "No listening record",
+    "rows": 133486,
+    "churn": 3460,
+    "prevalence": 0.025920321232189143,
+    "mean_prediction": 0.026827946417477735,
+    "roc_auc": 0.605798236751049,
+    "global_contacts": 5095,
+    "global_contact_rate": 0.03816879672774673
+  },
+  {
+    "segment": "has_listening_90d",
+    "label": "Listening record present",
+    "rows": 546915,
+    "churn": 34577,
+    "prevalence": 0.06322189005604162,
+    "mean_prediction": 0.05770696179214909,
+    "roc_auc": 0.8831363338924862,
+    "global_contacts": 62945,
+    "global_contact_rate": 0.11509101048609016
+  },
+  {
+    "segment": "member_absent",
+    "label": "No member record",
+    "rows": 85887,
+    "churn": 2147,
+    "prevalence": 0.024997962439018712,
+    "mean_prediction": 0.02650339505967312,
+    "roc_auc": 0.6161303412240674,
+    "global_contacts": 2883,
+    "global_contact_rate": 0.03356736176604143
+  },
+  {
+    "segment": "member_present",
+    "label": "Member record present",
+    "rows": 594514,
+    "churn": 35890,
+    "prevalence": 0.060368637239829506,
+    "mean_prediction": 0.055281559681599673,
+    "roc_auc": 0.8767119710810576,
+    "global_contacts": 65157,
+    "global_contact_rate": 0.10959708265911315
+  },
+  {
+    "segment": "seen_in_training",
+    "label": "Seen in training",
+    "rows": 525297,
+    "churn": 17587,
+    "prevalence": 0.033480107443979314,
+    "mean_prediction": 0.02974975240509075,
+    "roc_auc": 0.800188067923478,
+    "global_contacts": 26180,
+    "global_contact_rate": 0.04983847233089091
+  },
+  {
+    "segment": "unseen_in_training",
+    "label": "Unseen in training",
+    "rows": 155104,
+    "churn": 20450,
+    "prevalence": 0.1318470187744997,
+    "mean_prediction": 0.12581559840429662,
+    "roc_auc": 0.8938126820227069,
+    "global_contacts": 41860,
+    "global_contact_rate": 0.26988343305137197
+  },
+  {
+    "segment": "capped_duration",
+    "label": "Capped duration",
+    "rows": 3121,
+    "churn": 188,
+    "prevalence": 0.06023710349247036,
+    "mean_prediction": 0.04892141842893042,
+    "roc_auc": 0.8608207412351017,
+    "global_contacts": 262,
+    "global_contact_rate": 0.08394745273950657
+  },
+  {
+    "segment": "no_capped_duration",
+    "label": "No capped duration",
+    "rows": 677280,
+    "churn": 37849,
+    "prevalence": 0.05588382943538861,
+    "mean_prediction": 0.05166146131160008,
+    "roc_auc": 0.8661112676736684,
+    "global_contacts": 67778,
+    "global_contact_rate": 0.10007382471060713
+  }
+]

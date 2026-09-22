@@ -1,0 +1,80 @@
+{
+  "status": "built; Desktop validation recorded separately",
+  "tables": {
+    "Overview": {
+      "rows": 1,
+      "source": "model_evaluation.json / models / combined / calibrated"
+    },
+    "Models": {
+      "rows": 6,
+      "source": "model_evaluation.json / models / calibrated"
+    },
+    "Capacity": {
+      "rows": 3,
+      "source": "model_evaluation.json / combined calibrated and uncertainty"
+    },
+    "Calibration": {
+      "rows": 10,
+      "source": "model_evaluation.json / models / combined / calibration_bins (fixed width)"
+    },
+    "Segments": {
+      "rows": 8,
+      "source": "model_evaluation.json / segments_selected_model; global top 10% policy"
+    },
+    "Cohorts": {
+      "rows": 7,
+      "source": "sql_build_summary.json / cohorts; snapshot denominators, people recur"
+    },
+    "Source": {
+      "rows": 2,
+      "source": "model_evaluation.json / source_sensitivity / holdout; identical 679309 customers, fixed scores"
+    },
+    "Profiles": {
+      "rows": 60,
+      "source": "commercial_evaluation.json / policy_profiles; 60 mutually exclusive alternatives"
+    },
+    "Scenarios": {
+      "rows": 360,
+      "source": "commercial_evaluation.json / scenarios; profile + scenario grain"
+    },
+    "Scenario choices": {
+      "rows": 6,
+      "source": "commercial_evaluation.json / config / scenarios"
+    },
+    "Comparison": {
+      "rows": 12,
+      "source": "commercial_evaluation.json / scenarios; matched, 10%, risk-only, uniform; 12 alternatives"
+    },
+    "Power": {
+      "rows": 24,
+      "source": "experiment_power.json / binary_endpoint_power; 24 alternative planning designs"
+    },
+    "Commercial power": {
+      "rows": 2,
+      "source": "experiment_power.json / commercial_margin_power; two alternative planning designs"
+    },
+    "Sensitivity grid": {
+      "rows": 648,
+      "source": "commercial_sensitivity_grid.json; fixed matched risk-only 10% uniform scope"
+    }
+  },
+  "source_sha256": {
+    "model_evaluation.json": "c1adc303669d24ff043797ab649016363c79618a562053b1a9cb838f3fb381c5",
+    "commercial_evaluation.json": "1ab9fb9d36d36f2884356a14585626e0e2d1b696191a324ee014c5f31111d57c",
+    "commercial_sensitivity_grid.json": "a73b4f12f61d081699a9276f0de0231caf00de198512f88b1233dc47b0ad4ce0",
+    "experiment_power.json": "40936da343ba3a16a402e493f5803aaf77599b62fd57ac08bfe47d2af5fa0a48",
+    "sql_build_summary.json": "47b06d6b77b1bd81401cf4a000beb19f016bf8b9d30eca0528bcf2cde61159da"
+  },
+  "pages": [
+    "01_Overview",
+    "02_Cohorts_and_segments",
+    "03_Model_reliability",
+    "04_Commercial_sensitivity",
+    "05_Scenario_explorer",
+    "06_Experiment_and_gates"
+  ],
+  "visuals": 63,
+  "measures": 51,
+  "privacy": "Only aggregate published evidence; no customer identifiers or customer-level derivatives.",
+  "rebuild": "python -m src.build_dashboard; refresh in Power BI Desktop"
+}

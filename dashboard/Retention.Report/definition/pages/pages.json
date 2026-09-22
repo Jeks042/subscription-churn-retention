@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/pagesMetadata/1.0.0/schema.json",
+  "pageOrder": [
+    "01_Overview",
+    "02_Cohorts_and_segments",
+    "03_Model_reliability",
+    "04_Commercial_sensitivity",
+    "05_Scenario_explorer",
+    "06_Experiment_and_gates"
+  ],
+  "activePageName": "01_Overview"
+}

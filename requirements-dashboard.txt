@@ -1,0 +1,2 @@
+# Optional Microsoft JSON-schema verification only; dashboard builder uses stdlib.
+jsonschema==4.26.0

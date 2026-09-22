@@ -1,6 +1,8 @@
 # Subscription Churn & Retention Decision System
 
-**Status: Milestones 1–4 complete for the scoped retrospective study. SQL features, frozen model evaluation, commercial scenarios and an experiment proposal are published. Next: Power BI executive reporting and a decision memo.**
+**Status: Milestones 1–5 complete for the scoped retrospective study. The six-page Power BI report and executive decision memo are ready. Next: final reproducibility and portfolio review.**
+
+Start with the [milestone 5 report and screenshots](reports/milestone_5_findings.md), [Power BI project](dashboard/README.md) or [decision memo](reports/decision_memo.md). All 28 tests, 2,196 dashboard checks and 75 Microsoft schema validations pass.
 
 Start with the [milestone 4 findings](reports/milestone_4_findings.md) or [current progress page](reports/progress.md). With assumed 60 CU retained contribution and 3.50 CU contact/offer cost, the matched 10% list requires conditional saves of 16.27% under baseline labels versus 24.94% under refreshed labels. A 20% save assumption changes from surplus to loss across sources. The decision is further validation before a controlled pilot; no campaign or savings has been measured.
 
@@ -70,7 +72,7 @@ This independent analytical case study uses the KKBox/WSDM subscription dataset 
 | reports/ | Validated aggregate findings and decision records |
 | dashboard/ | Power BI specification and public screenshots |
 
-Tools: Python 3.13, DuckDB 1.5.5, NumPy 2.3.3, scikit-learn 1.7.2 and Matplotlib 3.10.6; Power BI reporting remains planned. Direct dependencies are pinned in requirements.txt and the recorded environment in requirements-lock.txt. Workflows run locally against authorised source files.
+Tools: Python 3.13, DuckDB 1.5.5, NumPy 2.3.3, scikit-learn 1.7.2, Matplotlib 3.10.6 and Power BI Desktop 2.157.1354.0. Direct dependencies are pinned in requirements.txt, optional report validation in requirements-dashboard.txt, and the analysis environment in requirements-lock.txt. Workflows run locally against authorised source files; the dashboard uses public aggregates only.
 
 ## Data source
 

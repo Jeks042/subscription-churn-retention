@@ -1,0 +1,20 @@
+[
+  {
+    "target_power": 0.8,
+    "null_commercial_margin": 0.058333333333333334,
+    "assumed_true_absolute_effect": 0.08,
+    "per_arm_complete_equivalent": 8360,
+    "per_arm_enrolment_allowance": 8800,
+    "total_enrolment": 17600,
+    "reference_expected_treatment_cost_cu": 30800.0
+  },
+  {
+    "target_power": 0.9,
+    "null_commercial_margin": 0.058333333333333334,
+    "assumed_true_absolute_effect": 0.08,
+    "per_arm_complete_equivalent": 11192,
+    "per_arm_enrolment_allowance": 11782,
+    "total_enrolment": 23564,
+    "reference_expected_treatment_cost_cu": 41237.0
+  }
+]

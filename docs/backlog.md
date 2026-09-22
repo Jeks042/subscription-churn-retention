@@ -50,6 +50,8 @@ Acceptance: A stakeholder can understand what decision is supported, what remain
 
 ## 6. Verify reproducibility and publish the portfolio case study
 
+Milestone 5 is complete: six-page portable Power BI report, 14 aggregate tables, 51 DAX measures, Desktop review and screenshots, plus executive decision memo. All 28 tests, 2,196 dashboard checks and 75 Microsoft schema checks pass. See [milestone 5 findings](../reports/milestone_5_findings.md).
+
 [Issue #6](https://github.com/Jeks042/subscription-churn-retention/issues/6) · Depends on: #5
 
 Complete a defensible flagship case study with consistent public evidence.

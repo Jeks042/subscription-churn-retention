@@ -1,0 +1,242 @@
+[
+  {
+    "control_rate_source": "conservative_50pct",
+    "control_retention_proxy": 0.5,
+    "absolute_retention_effect": 0.01,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 39240,
+    "achieved_approximate_power": 0.8000080028759551,
+    "per_arm_enrolment_allowance": 41306,
+    "total_enrolment": 82612
+  },
+  {
+    "control_rate_source": "conservative_50pct",
+    "control_retention_proxy": 0.5,
+    "absolute_retention_effect": 0.01,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 52530,
+    "achieved_approximate_power": 0.9000012657835431,
+    "per_arm_enrolment_allowance": 55295,
+    "total_enrolment": 110590
+  },
+  {
+    "control_rate_source": "conservative_50pct",
+    "control_retention_proxy": 0.5,
+    "absolute_retention_effect": 0.02,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 9806,
+    "achieved_approximate_power": 0.8000011084757656,
+    "per_arm_enrolment_allowance": 10323,
+    "total_enrolment": 20646
+  },
+  {
+    "control_rate_source": "conservative_50pct",
+    "control_retention_proxy": 0.5,
+    "absolute_retention_effect": 0.02,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 13127,
+    "achieved_approximate_power": 0.9000012273829056,
+    "per_arm_enrolment_allowance": 13818,
+    "total_enrolment": 27636
+  },
+  {
+    "control_rate_source": "conservative_50pct",
+    "control_retention_proxy": 0.5,
+    "absolute_retention_effect": 0.03,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 4356,
+    "achieved_approximate_power": 0.8000563220157813,
+    "per_arm_enrolment_allowance": 4586,
+    "total_enrolment": 9172
+  },
+  {
+    "control_rate_source": "conservative_50pct",
+    "control_retention_proxy": 0.5,
+    "absolute_retention_effect": 0.03,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 5831,
+    "achieved_approximate_power": 0.9000427332521489,
+    "per_arm_enrolment_allowance": 6138,
+    "total_enrolment": 12276
+  },
+  {
+    "control_rate_source": "conservative_50pct",
+    "control_retention_proxy": 0.5,
+    "absolute_retention_effect": 0.06,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 1086,
+    "achieved_approximate_power": 0.8003560123870549,
+    "per_arm_enrolment_allowance": 1144,
+    "total_enrolment": 2288
+  },
+  {
+    "control_rate_source": "conservative_50pct",
+    "control_retention_proxy": 0.5,
+    "absolute_retention_effect": 0.06,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 1453,
+    "achieved_approximate_power": 0.9001896871000953,
+    "per_arm_enrolment_allowance": 1530,
+    "total_enrolment": 3060
+  },
+  {
+    "control_rate_source": "common_baseline",
+    "control_retention_proxy": 0.6415427646106286,
+    "absolute_retention_effect": 0.01,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 35873,
+    "achieved_approximate_power": 0.8000101415694547,
+    "per_arm_enrolment_allowance": 37762,
+    "total_enrolment": 75524
+  },
+  {
+    "control_rate_source": "common_baseline",
+    "control_retention_proxy": 0.6415427646106286,
+    "absolute_retention_effect": 0.01,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 48023,
+    "achieved_approximate_power": 0.9000051581448497,
+    "per_arm_enrolment_allowance": 50551,
+    "total_enrolment": 101102
+  },
+  {
+    "control_rate_source": "common_baseline",
+    "control_retention_proxy": 0.6415427646106286,
+    "absolute_retention_effect": 0.02,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 8909,
+    "achieved_approximate_power": 0.8000157137402274,
+    "per_arm_enrolment_allowance": 9378,
+    "total_enrolment": 18756
+  },
+  {
+    "control_rate_source": "common_baseline",
+    "control_retention_proxy": 0.6415427646106286,
+    "absolute_retention_effect": 0.02,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 11926,
+    "achieved_approximate_power": 0.9000078329896216,
+    "per_arm_enrolment_allowance": 12554,
+    "total_enrolment": 25108
+  },
+  {
+    "control_rate_source": "common_baseline",
+    "control_retention_proxy": 0.6415427646106286,
+    "absolute_retention_effect": 0.03,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 3932,
+    "achieved_approximate_power": 0.8000125867132576,
+    "per_arm_enrolment_allowance": 4139,
+    "total_enrolment": 8278
+  },
+  {
+    "control_rate_source": "common_baseline",
+    "control_retention_proxy": 0.6415427646106286,
+    "absolute_retention_effect": 0.03,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 5264,
+    "achieved_approximate_power": 0.9000445571809524,
+    "per_arm_enrolment_allowance": 5542,
+    "total_enrolment": 11084
+  },
+  {
+    "control_rate_source": "common_baseline",
+    "control_retention_proxy": 0.6415427646106286,
+    "absolute_retention_effect": 0.06,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 961,
+    "achieved_approximate_power": 0.800153505581033,
+    "per_arm_enrolment_allowance": 1012,
+    "total_enrolment": 2024
+  },
+  {
+    "control_rate_source": "common_baseline",
+    "control_retention_proxy": 0.6415427646106286,
+    "absolute_retention_effect": 0.06,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 1286,
+    "achieved_approximate_power": 0.9001091365247393,
+    "per_arm_enrolment_allowance": 1354,
+    "total_enrolment": 2708
+  },
+  {
+    "control_rate_source": "common_full_union",
+    "control_retention_proxy": 0.7660974532607095,
+    "absolute_retention_effect": 0.01,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 27707,
+    "achieved_approximate_power": 0.8000103695472027,
+    "per_arm_enrolment_allowance": 29166,
+    "total_enrolment": 58332
+  },
+  {
+    "control_rate_source": "common_full_union",
+    "control_retention_proxy": 0.7660974532607095,
+    "absolute_retention_effect": 0.01,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 37091,
+    "achieved_approximate_power": 0.9000045231791759,
+    "per_arm_enrolment_allowance": 39044,
+    "total_enrolment": 78088
+  },
+  {
+    "control_rate_source": "common_full_union",
+    "control_retention_proxy": 0.7660974532607095,
+    "absolute_retention_effect": 0.02,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 6819,
+    "achieved_approximate_power": 0.8000396216326877,
+    "per_arm_enrolment_allowance": 7178,
+    "total_enrolment": 14356
+  },
+  {
+    "control_rate_source": "common_full_union",
+    "control_retention_proxy": 0.7660974532607095,
+    "absolute_retention_effect": 0.02,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 9128,
+    "achieved_approximate_power": 0.9000216783405323,
+    "per_arm_enrolment_allowance": 9609,
+    "total_enrolment": 19218
+  },
+  {
+    "control_rate_source": "common_full_union",
+    "control_retention_proxy": 0.7660974532607095,
+    "absolute_retention_effect": 0.03,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 2982,
+    "achieved_approximate_power": 0.8001167504957194,
+    "per_arm_enrolment_allowance": 3139,
+    "total_enrolment": 6278
+  },
+  {
+    "control_rate_source": "common_full_union",
+    "control_retention_proxy": 0.7660974532607095,
+    "absolute_retention_effect": 0.03,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 3991,
+    "achieved_approximate_power": 0.9000446680553328,
+    "per_arm_enrolment_allowance": 4202,
+    "total_enrolment": 8404
+  },
+  {
+    "control_rate_source": "common_full_union",
+    "control_retention_proxy": 0.7660974532607095,
+    "absolute_retention_effect": 0.06,
+    "target_power": 0.8,
+    "per_arm_complete_equivalent": 707,
+    "achieved_approximate_power": 0.8001999386187283,
+    "per_arm_enrolment_allowance": 745,
+    "total_enrolment": 1490
+  },
+  {
+    "control_rate_source": "common_full_union",
+    "control_retention_proxy": 0.7660974532607095,
+    "absolute_retention_effect": 0.06,
+    "target_power": 0.9,
+    "per_arm_complete_equivalent": 946,
+    "achieved_approximate_power": 0.9001524685919553,
+    "per_arm_enrolment_allowance": 996,
+    "total_enrolment": 1992
+  }
+]

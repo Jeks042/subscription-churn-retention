@@ -1,0 +1,93 @@
+[
+  {
+    "scoring_date": "2016-05-01",
+    "split": "train",
+    "candidates": 739011,
+    "lead_eligible": 575183,
+    "mature_eligible": 575183,
+    "censored_eligible": 0,
+    "churn": 36805,
+    "renewed": 538378,
+    "churn_rate": 0.06398833067041272,
+    "renewal_rate": 0.9360116693295872,
+    "latest_maturity": "2016-06-30"
+  },
+  {
+    "scoring_date": "2016-06-01",
+    "split": "train",
+    "candidates": 742821,
+    "lead_eligible": 582690,
+    "mature_eligible": 582690,
+    "censored_eligible": 0,
+    "churn": 36113,
+    "renewed": 546577,
+    "churn_rate": 0.061976351061456346,
+    "renewal_rate": 0.9380236489385436,
+    "latest_maturity": "2016-07-30"
+  },
+  {
+    "scoring_date": "2016-07-01",
+    "split": "train",
+    "candidates": 766710,
+    "lead_eligible": 598400,
+    "mature_eligible": 598400,
+    "censored_eligible": 0,
+    "churn": 31160,
+    "renewed": 567240,
+    "churn_rate": 0.05207219251336898,
+    "renewal_rate": 0.947927807486631,
+    "latest_maturity": "2016-08-30"
+  },
+  {
+    "scoring_date": "2016-08-01",
+    "split": "train",
+    "candidates": 799459,
+    "lead_eligible": 632984,
+    "mature_eligible": 632984,
+    "censored_eligible": 0,
+    "churn": 30679,
+    "renewed": 602305,
+    "churn_rate": 0.04846725983595162,
+    "renewal_rate": 0.9515327401640484,
+    "latest_maturity": "2016-09-30"
+  },
+  {
+    "scoring_date": "2016-10-01",
+    "split": "selection",
+    "candidates": 835812,
+    "lead_eligible": 649745,
+    "mature_eligible": 649745,
+    "censored_eligible": 0,
+    "churn": 33390,
+    "renewed": 616355,
+    "churn_rate": 0.05138939122271045,
+    "renewal_rate": 0.9486106087772895,
+    "latest_maturity": "2016-11-30"
+  },
+  {
+    "scoring_date": "2016-12-01",
+    "split": "calibration",
+    "candidates": 882127,
+    "lead_eligible": 665170,
+    "mature_eligible": 665170,
+    "censored_eligible": 0,
+    "churn": 35175,
+    "renewed": 629995,
+    "churn_rate": 0.05288121833516244,
+    "renewal_rate": 0.9471187816648375,
+    "latest_maturity": "2017-01-30"
+  },
+  {
+    "scoring_date": "2017-02-01",
+    "split": "holdout",
+    "candidates": 881535,
+    "lead_eligible": 680401,
+    "mature_eligible": 680401,
+    "censored_eligible": 0,
+    "churn": 38037,
+    "renewed": 642364,
+    "churn_rate": 0.055903797907410485,
+    "renewal_rate": 0.9440962020925895,
+    "latest_maturity": "2017-03-30"
+  }
+]

@@ -2,7 +2,7 @@
 
 ## Current position
 
-Milestones 1–4 are complete for the scoped retrospective study. The commercial stage adds 360 named scenarios, 648 cost/value/response sensitivity rows and a customer-randomised experiment proposal. Read the [milestone 4 findings](milestone_4_findings.md). All 28 tests pass; 5,604 independent commercial calculations agree.
+Milestones 1–5 are complete for the scoped retrospective study. The six-page Power BI report and executive decision memo are ready. Read the [milestone 5 findings and screenshots](milestone_5_findings.md). All 28 tests, 2,196 dashboard checks and 75 Microsoft schema validations pass. Desktop refresh and the guarded scenario interaction were verified.
 
 Under the assumed 60 CU retained contribution and 3.50 CU contact/offer cost, the matched 10% list needs to save 16.27% of would-be churners under baseline labels versus 24.94% under refreshed labels. A 20% save assumption produces a surplus in one source case and a loss in the other. The decision is further validation before a controlled pilot. No campaign or incremental retention has been measured.
 
@@ -68,4 +68,4 @@ Backdated transactions in the refreshed release change historical outcomes. The 
 - [Milestone 3 issue](https://github.com/Jeks042/subscription-churn-retention/issues/3)
 - [Milestone 4 issue](https://github.com/Jeks042/subscription-churn-retention/issues/4)
 
-Next: [milestone 5](https://github.com/Jeks042/subscription-churn-retention/issues/5) — Power BI executive reporting and a decision memo. All commercial amounts are generic CU scenarios. Source-version dependence, 22 unresolved supplied-label differences and unknown ingestion availability remain explicit limits. No user action is currently required.
+Next: [milestone 6](https://github.com/Jeks042/subscription-churn-retention/issues/6) — final reproducibility and portfolio review. All commercial amounts are generic CU scenarios. Source-version dependence, 22 unresolved supplied-label differences and unknown ingestion availability remain explicit limits. No user action is currently required.
