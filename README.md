@@ -1,6 +1,6 @@
 # Subscription Churn & Retention Decision System
 
-**Status: project initiated; data validation pending. No model results or retention impact claims are available yet.**
+**Status: source validation in progress. Access confirmed; initial audits complete. Model fitting remains on hold pending label and temporal reconciliation.**
 
 ## Business decision
 
@@ -29,6 +29,10 @@ Start with [Milestone 1](https://github.com/Jeks042/subscription-churn-retention
 
 ## Documentation
 
+- [Validation findings and outstanding gates](reports/validation_findings.md)
+- [Reproducible validation workflow](docs/validation_workflow.md)
+- [Temporal feasibility review](docs/temporal_feasibility.md)
+- [Source review](docs/source_review.md)
 - [Business brief](docs/business_brief.md)
 - [Analytical design](docs/analytical_design.md)
 - [Data access and handling](data/README.md)
@@ -47,7 +51,7 @@ Start with [Milestone 1](https://github.com/Jeks042/subscription-churn-retention
 | reports/ | Validated aggregate findings and decision records |
 | dashboard/ | Power BI specification and public screenshots |
 
-Planned tools: SQL, Python and Power BI. Execution dependencies will be pinned when the ingestion approach is validated. This initial repository contains the project design, not an executable analysis pipeline.
+Tools: Python 3.13 and DuckDB 1.5.5 for source validation; Power BI planned for reporting. Dependencies are pinned in requirements.txt. The validation workflow runs locally against authorised source files; modelling and dashboards are not yet implemented.
 
 ## Data source
 

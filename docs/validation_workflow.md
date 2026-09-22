@@ -20,7 +20,21 @@ Null counts, date ranges and label counts exclude malformed-width rows; malforme
 
 ## 3. Relational validation
 
-Next implement exact key uniqueness and duplicate checks, join coverage, transaction ordering, cancellation/renewal resolution and manually reviewed label examples. The initial inventory script does not perform these checks.
+The following commands implement label-key checks, transaction duplicates and join coverage, deterministic sampled renewal reconstruction and release diagnostics. The initial inventory script alone does not perform these checks.
+
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -r requirements.txt
+.\.venv\Scripts\python.exe src/audit_labels.py --input-dir data/raw --output data/validation/label_audit.json
+.\.venv\Scripts\python.exe src/audit_transactions.py --input-dir data/raw --output-dir data/validation
+.\.venv\Scripts\python.exe src/check_release_overlap.py
+.\.venv\Scripts\python.exe src/diagnose_label_windows.py
+.\.venv\Scripts\python.exe src/audit_auxiliary.py --members data/raw/members_v3.csv --logs data/raw/data/churn_comp_refresh/user_logs_v2.csv --output-dir data/validation
+```
+
+Run from the project root. The v2 archives contain nested paths; copy train_v2.csv and transactions_v2.csv to data/raw/ after extraction, or preserve the documented arrangement. Audit outputs and DuckDB databases remain in ignored data/validation/. The auxiliary command deliberately scans the refreshed log file only. It does not stand in for an audit of the original logs.
+
+Transaction source union is diagnostic. It is not yet an approved production merge or deduplication policy. Sample reconciliation deliberately uses all pre-cutoff history; diagnose_label_windows.py separately checks the source example's previous-month filter. Neither script silently treats censored outcomes as non-churn.
 
 ## 4. Temporal feasibility
 
@@ -33,7 +47,7 @@ Only after the preceding checks, publish permitted aggregate findings and a GO/N
 ## Tool verification
 
 ```powershell
-python -m unittest discover -s tests -v
+.\.venv\Scripts\python.exe -m unittest discover -s tests -v
 ```
 
-Fixtures are synthetic and exercise impossible dates, missingness, malformed rows, invalid labels, compressed inputs, scan limits and duplicate headers. Passing these tests validates the inventory utility, not the KKBox dataset.
+Nine synthetic tests cover inventory, label keys, the 30-day boundary, censoring of incomplete outcomes, same-day ordering and cancellation handling. The full source-file scans are separate evidence from these tool tests.
