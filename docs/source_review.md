@@ -21,8 +21,9 @@ The final temporal test needs enough follow-up for every included expiry. A conv
 
 ## Access state
 
-Account sign-in and competition agreement acceptance verified on 22 September 2026. Acceptance followed explicit user confirmation. The labeller, both label releases, both transaction releases, members and refreshed listening logs have been downloaded. The large original listening-log archive is not yet confirmed complete.
+Account sign-in and competition agreement acceptance verified on 22 September 2026. Acceptance followed explicit user confirmation. The labeller, both label releases, both transaction releases, members and both listening-log releases have been downloaded. The original log is present locally, but a strict parse stopped at line 103,280,203 on a malformed-width row (six fields where nine were expected); the full inventory and deterministic handling rule are still pending.
 
 ## Source-code boundary
 
 The supplied labeller treats a gap below 30 days as renewal and a gap of at least 30 as churn. It orders same-day plan events and allows cancellation to shorten the effective expiry before the first subsequent renewal. Our tests cover these boundaries. The supplied code remains in ignored local storage; it is not redistributed in the public repository.
+

@@ -4,7 +4,7 @@
 
 ## Evidence completed
 
-Authorised Kaggle access was confirmed and the competition agreement accepted following explicit user confirmation. Both label releases, both transaction releases, the member file, refreshed listening logs and the official Scala labeller were acquired locally. The original listening archive has not yet been confirmed complete.
+Authorised Kaggle access was confirmed and the competition agreement accepted following explicit user confirmation. Both label releases, both transaction releases, the member file, both listening-log releases and the official Scala labeller were acquired locally. The original listening archive is present locally; its full row-level inventory is still completing.
 
 | File | Rows | Distinct customers | Coverage / principal check |
 |---|---:|---:|---|
@@ -14,8 +14,9 @@ Authorised Kaggle access was confirmed and the competition agreement accepted fo
 | transactions_v2.csv | 1,431,009 | 1,197,050 | Event dates 2015-01-01 to 2017-03-31 |
 | members_v3.csv | 6,769,473 | 6,769,473 | Registration dates 2004-03-26 to 2017-04-29 |
 | user_logs_v2.csv | 18,396,362 | 1,103,894 | Listening dates 2017-03-01 to 2017-03-31 |
+| user_logs.csv | pending full scan | pending | Original release; strict parsing found a malformed-width row |
 
-The label and transaction inventories scanned every row, found no malformed-width rows or missing fields, and recorded SHA-256 checksums locally. Label IDs are unique and labels are binary. Member/log SQL scans, checksums and key/date audits are also complete for the named files. Do not extrapolate these findings to the unscanned original logs.
+The label and transaction inventories scanned every row, found no malformed-width rows or missing fields, and recorded SHA-256 checksums locally. Label IDs are unique and labels are binary. The refreshed member/log SQL scans, checksums and key/date audits are complete. A strict DuckDB read of the original listening log stopped at line 103,280,203 on a six-column row where nine columns were expected; the source will not be silently repaired or ignored. Do not use the original log for model features until the malformed-row scope and deterministic handling rule are documented.
 
 ## Material findings and implications
 
@@ -43,10 +44,11 @@ Do not assume the supplied releases form a deployable month-to-month split. Trai
 
 ## Remaining gates
 
-1. Complete and verify original listening-log acquisition and coverage.
+1. Complete and verify original listening-log acquisition and coverage, including the malformed-row count and handling rule.
 2. Resolve transaction-version handling and explain remaining label mismatches.
 3. Review anonymised local label examples against source ordering, without publishing customer histories.
 4. Validate historical cohort counts and freeze eligibility, intervention lead time and time cutoffs.
 5. Record the final GO/NO-GO decision for feature engineering.
 
 Reproduction: [validation workflow](../docs/validation_workflow.md). Raw data, customer-level outputs, source labeller and local databases are excluded from the public repository. Figures above are aggregate diagnostics, not model performance or intervention impact.
+
