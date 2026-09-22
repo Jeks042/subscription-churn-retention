@@ -1,10 +1,12 @@
 # Subscription Churn & Retention Decision System
 
-**Status: Milestones 1–3 complete for the scoped retrospective study. Reproducible SQL features and a frozen temporal model evaluation are published. Next: commercial scenarios and experiment design.**
+**Status: Milestones 1–4 complete for the scoped retrospective study. SQL features, frozen model evaluation, commercial scenarios and an experiment proposal are published. Next: Power BI executive reporting and a decision memo.**
 
-Start with the [milestone 3 findings](reports/milestone_3_findings.md) or [current progress page](reports/progress.md). On 680,401 final-test customers, the frozen combined logistic model captures 66.13% of reconstructed churn at 10% contact capacity (36.97% precision; 6.61× lift). Source sensitivity materially changes expected results: matched-population precision falls from 35.85% to 23.39% under alternative labels. These are historical targeting results, not retained customers or realised savings.
+Start with the [milestone 4 findings](reports/milestone_4_findings.md) or [current progress page](reports/progress.md). With assumed 60 CU retained contribution and 3.50 CU contact/offer cost, the matched 10% list requires conditional saves of 16.27% under baseline labels versus 24.94% under refreshed labels. A 20% save assumption changes from surplus to loss across sources. The decision is further validation before a controlled pilot; no campaign or savings has been measured.
 
-The SQL foundation has 4,384,573 customer/date rows and 38 input features. All 21 tests pass; independent checks agree on 7,000 sampled labels, 16,100 listening values and 96 model metric values. See the [SQL dictionary](docs/sql_workflow.md) and [model reproduction workflow](docs/model_workflow.md).
+The [frozen model evaluation](reports/milestone_3_findings.md) captures 66.13% of reconstructed churn at 10% capacity on 680,401 final-test customers (36.97% precision; 6.61× lift). Source sensitivity and missing-record segments constrain interpretation.
+
+The SQL foundation has 4,384,573 customer/date rows and 38 input features. All 28 tests pass; independent checks agree on 7,000 sampled labels, 16,100 listening values, 96 model metrics and 5,604 commercial values. See the [SQL dictionary](docs/sql_workflow.md), [model workflow](docs/model_workflow.md) and [commercial workflow](docs/commercial_workflow.md).
 
 ## Business decision
 
@@ -29,12 +31,16 @@ This independent analytical case study uses the KKBox/WSDM subscription dataset 
 5. [Build Power BI executive report and decision memo](https://github.com/Jeks042/subscription-churn-retention/issues/5)
 6. [Verify reproducibility and publish the portfolio case study](https://github.com/Jeks042/subscription-churn-retention/issues/6)
 
-[Milestone 3](https://github.com/Jeks042/subscription-churn-retention/issues/3) is complete. The [commercial handoff](docs/commercial_handoff.md) carries capacity scenarios, source sensitivity and interpretation limits into milestone 4. Supplied competition labels remain diagnostic rather than interchangeable with reconstructed historical outcomes.
+[Milestone 4](https://github.com/Jeks042/subscription-churn-retention/issues/4) is complete. The [dashboard handoff](docs/dashboard_handoff.md) carries the validated evidence and scenario definitions into milestone 5. Supplied competition labels remain diagnostic rather than interchangeable with reconstructed historical outcomes.
 
 ## Documentation
 
 - [Validation findings and outstanding gates](reports/validation_findings.md)
 - [Current progress](reports/progress.md)
+- [Milestone 4 findings and break-even chart](reports/milestone_4_findings.md)
+- [Commercial assumptions and workflow](docs/commercial_workflow.md)
+- [Proposed retention experiment](docs/retention_experiment.md)
+- [Dashboard handoff](docs/dashboard_handoff.md)
 - [Milestone 3 findings and charts](reports/milestone_3_findings.md)
 - [Frozen evaluation plan](docs/evaluation_plan.md)
 - [Model reproduction workflow](docs/model_workflow.md)

@@ -38,6 +38,8 @@ Translate risk estimates into transparent decision scenarios without claiming ca
 
 Acceptance: All commercial outputs are labelled scenarios. Predicted churn is never presented as persuadability, realised savings or measured intervention ROI.
 
+Completed: risk-only versus payment-proxy policy scenarios, explicit 90-day CU economics, conditional/absolute break-even, 360 named scenarios, 648 sensitivity rows and a customer-randomised experiment proposal with 24 conventional power cases plus commercial-threshold planning. All 28 tests pass and 5,604 independently recalculated commercial values agree. Decision: further validation before a controlled pilot. See [milestone 4 findings](../reports/milestone_4_findings.md).
+
 ## 5. Build Power BI executive report and decision memo
 
 [Issue #5](https://github.com/Jeks042/subscription-churn-retention/issues/5) · Depends on: #4

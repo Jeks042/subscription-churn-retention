@@ -2,9 +2,9 @@
 
 ## Current position
 
-Milestones 1–3 are complete for the scoped retrospective study. The frozen combined logistic regression has been evaluated on 680,401 February customers, with calibration, capacity scenarios, customer-bootstrap intervals, segment diagnostics and source sensitivity. Read the [milestone 3 findings and chart](milestone_3_findings.md). All 21 tests pass and an independent check matches all 96 reported model metric values.
+Milestones 1–4 are complete for the scoped retrospective study. The commercial stage adds 360 named scenarios, 648 cost/value/response sensitivity rows and a customer-randomised experiment proposal. Read the [milestone 4 findings](milestone_4_findings.md). All 28 tests pass; 5,604 independent commercial calculations agree.
 
-At 10% contact capacity, the model captures 66.13% of reconstructed churn with 36.97% precision and 6.61× lift. The main limitation is source dependence: on the common eligible population, precision falls from 35.85% to 23.39% under alternative labels. These results support commercial scenario analysis, not a claim that an intervention saved customers.
+Under the assumed 60 CU retained contribution and 3.50 CU contact/offer cost, the matched 10% list needs to save 16.27% of would-be churners under baseline labels versus 24.94% under refreshed labels. A 20% save assumption produces a surplus in one source case and a loss in the other. The decision is further validation before a controlled pilot. No campaign or incremental retention has been measured.
 
 ## What exists
 
@@ -20,6 +20,8 @@ flowchart LR
   G --> H[December probability calibration]
   H --> I[Frozen February evaluation]
   I --> J[Capacity and source-sensitivity findings]
+  J --> K[Commercial assumptions and break-even]
+  K --> L[Proposed randomised experiment]
 ```
 
 Features describe what happened before scoring. Labels describe what happened afterwards. Keeping those tables separate makes accidental use of future information easier to detect.
@@ -30,12 +32,15 @@ Features describe what happened before scoring. Labels describe what happened af
 - Reconstructed cohorts at seven dates, with 4,384,573 outreach-eligible customer/date rows.
 - Versioned SQL for staging, cohort labels, transaction/listening features, coverage and assertions.
 - A combined 4,384,573-row feature table and explicit 38-predictor model input, with training-only fills.
-- Twenty-one passing synthetic tests, including future-data leakage, duplicate inflation, churn boundaries, training-only preparation, weighted model metrics and capacity accounting.
+- Twenty-eight passing synthetic tests, including future-data leakage, duplicate inflation, churn boundaries, training-only preparation, weighted model metrics and capacity accounting.
 - SQL/Python label agreement on 7,000 sampled real customer/date records.
 - Independent listening agreement on 16,100 values across 700 sampled customer/date records.
 - Five baseline families plus a duration ablation; a published model freeze before final evaluation.
 - Customer-bootstrap uncertainty, calibration charts, overlap/segment/drift checks and fixed-score alternative-label sensitivity.
 - Independent verification of 96 final-test metrics across six models with no differences.
+- Risk-only/value-proxy comparisons, conditional/absolute economics, 360 named scenarios and 648 sensitivity rows.
+- Independent agreement on 5,604 commercial values; 24 conventional sample-size cases and commercial-margin planning.
+- A proposed customer-randomised retention experiment with no real assignments or outreach.
 
 ## Findings that matter
 
@@ -45,6 +50,10 @@ Backdated transactions in the refreshed release change historical outcomes. The 
 
 ## Where to look
 
+- [Milestone 4 findings and break-even chart](milestone_4_findings.md)
+- [Commercial reproduction workflow](../docs/commercial_workflow.md)
+- [Proposed retention experiment](../docs/retention_experiment.md)
+- [Dashboard handoff](../docs/dashboard_handoff.md)
 - [Validation findings](validation_findings.md)
 - [Milestone 3 findings and chart](milestone_3_findings.md)
 - [Model evaluation workflow](../docs/model_workflow.md)
@@ -57,5 +66,6 @@ Backdated transactions in the refreshed release change historical outcomes. The 
 - [Milestone 1 issue](https://github.com/Jeks042/subscription-churn-retention/issues/1)
 - [Milestone 2 issue](https://github.com/Jeks042/subscription-churn-retention/issues/2)
 - [Milestone 3 issue](https://github.com/Jeks042/subscription-churn-retention/issues/3)
+- [Milestone 4 issue](https://github.com/Jeks042/subscription-churn-retention/issues/4)
 
-Next: [milestone 4](https://github.com/Jeks042/subscription-churn-retention/issues/4) — contribution-value assumptions, contact/offer costs, break-even retention scenarios and a randomised intervention proposal. Source-version sensitivity, 22 unexplained supplied-label differences and unknown ingestion availability remain explicit limits. No user action is currently required.
+Next: [milestone 5](https://github.com/Jeks042/subscription-churn-retention/issues/5) — Power BI executive reporting and a decision memo. All commercial amounts are generic CU scenarios. Source-version dependence, 22 unresolved supplied-label differences and unknown ingestion availability remain explicit limits. No user action is currently required.

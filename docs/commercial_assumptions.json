@@ -1,0 +1,40 @@
+{
+  "currency": "CU: generic scenario units, not observed KKBox currency or prices",
+  "horizon_days": 90,
+  "days_per_scenario_month": 30,
+  "monthly_fee_cu": 40,
+  "reference_margin": 0.5,
+  "reference_contact_cost_cu": 0.5,
+  "reference_incentive_cost_cu": 10,
+  "reference_redemption_churn": 0.3,
+  "reference_redemption_renew": 0.3,
+  "fixed_cost_cu": 0,
+  "value_index_floor": 0.5,
+  "value_index_ceiling": 2.0,
+  "unknown_value_index": 1.0,
+  "capacities": [0.05, 0.1, 0.2],
+  "grid": {
+    "margin": [0.3, 0.5, 0.7],
+    "contact_cost": [0.25, 0.5, 1.0],
+    "incentive_cost": [0, 5, 10],
+    "redemption": [0.1, 0.3, 0.6],
+    "conditional_save": [0, 0.05, 0.1, 0.2]
+  },
+  "scenarios": [
+    {"name":"adverse_1pp","effect_type":"absolute","effect":-0.01,"margin":0.5,"contact_cost":0.5,"incentive_cost":10,"redemption":0.3},
+    {"name":"downside","effect_type":"conditional","effect":0.05,"margin":0.3,"contact_cost":1,"incentive_cost":10,"redemption":0.6},
+    {"name":"zero_effect","effect_type":"conditional","effect":0,"margin":0.5,"contact_cost":0.5,"incentive_cost":10,"redemption":0.3},
+    {"name":"reference_10pct_save","effect_type":"conditional","effect":0.1,"margin":0.5,"contact_cost":0.5,"incentive_cost":10,"redemption":0.3},
+    {"name":"reference_20pct_save","effect_type":"conditional","effect":0.2,"margin":0.5,"contact_cost":0.5,"incentive_cost":10,"redemption":0.3},
+    {"name":"optimistic","effect_type":"conditional","effect":0.2,"margin":0.7,"contact_cost":0.25,"incentive_cost":5,"redemption":0.3}
+  ],
+  "experiment": {
+    "alpha": 0.05,
+    "powers": [0.8, 0.9],
+    "absolute_effects": [0.01, 0.02, 0.03, 0.06],
+    "missing_outcome_allowance": 0.05,
+    "commercial_alternative_absolute_effect": 0.08,
+    "simulation_replicates": 50000,
+    "seed": 20260922
+  }
+}

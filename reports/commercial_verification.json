@@ -1,0 +1,7 @@
+{
+  "scenario_rows": 360,
+  "sensitivity_rows": 648,
+  "aggregate_values_checked": 5604,
+  "differences": [],
+  "method": "Independent Decimal arithmetic plus paired-source list statistics; no pipeline economics functions imported"
+}
