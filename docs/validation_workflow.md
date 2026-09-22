@@ -47,6 +47,8 @@ tar -tvf "$env:USERPROFILE/Downloads/user_logs.csv.7z"
 
 The SQL audit strictly parses every record, hashes the complete source, checks keys/dates/seconds, scans duplicates per month to bound memory, and reports member-join coverage. It can take tens of minutes on the full original release. No permissive row skipping is enabled. DuckDB spill files use an isolated system temporary directory outside the synced workspace.
 
+Runtime note from this validation: the first full original-log audit wrote its complete report before the process exited nonzero during database close with workspace-local spill files. The persisted database was reopened independently; its 392,106,543 rows reconcile to all monthly totals, nonfinite seconds count is zero, and the verification process closed cleanly. The committed audit runners now use isolated system spill directories. The transaction SQL pipeline completed a full rerun with that configuration and exit code zero.
+
 The [transaction SQL workflow](sql_workflow.md) implements the documented baseline convention and has its own assertions. Verify its labels against the separate Python implementation with:
 
 ```powershell

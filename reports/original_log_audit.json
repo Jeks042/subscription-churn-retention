@@ -1,0 +1,166 @@
+{
+  "members": {
+    "filename": "members_v3.csv",
+    "size_bytes": 427921437,
+    "sha256": "5bacf7d28ee97b7f017feca8650f84169cfcd97bad8995e81344c41e31989edd",
+    "row_count": 6769473,
+    "customers": 6769473,
+    "duplicate_key_excess": 0,
+    "missing_ids": 0,
+    "missing_gender": 4429505,
+    "zero_age": 4540215,
+    "age_outside_0_100": 5651,
+    "min_registration_date": "20040326",
+    "max_registration_date": "20170429",
+    "invalid_registration_dates": 0
+  },
+  "logs": {
+    "filename": "user_logs.csv",
+    "size_bytes": 30514081415,
+    "sha256": "32d83038c86f7974b8f346bb7da1876a186248aa42c74a432517e70cf514d729",
+    "row_count": 392106543,
+    "customers": 5234111,
+    "min_date": "20150101",
+    "max_date": "20170228",
+    "missing_keys": 0,
+    "invalid_dates": 0,
+    "negative_listening_seconds": 61493,
+    "over_24h_listening_seconds": 142993,
+    "invalid_listening_seconds": 0,
+    "duplicate_customer_day_excess": 0,
+    "monthly_rows": [
+      {
+        "month": "201501",
+        "rows": 12897706,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201502",
+        "rows": 11457186,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201503",
+        "rows": 13233548,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201504",
+        "rows": 13146949,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201505",
+        "rows": 13477134,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201506",
+        "rows": 13111785,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201507",
+        "rows": 13186484,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201508",
+        "rows": 13428113,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201509",
+        "rows": 13559390,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201510",
+        "rows": 14403123,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201511",
+        "rows": 14370471,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201512",
+        "rows": 15043579,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201601",
+        "rows": 15117586,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201602",
+        "rows": 13936796,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201603",
+        "rows": 15998873,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201604",
+        "rows": 15883383,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201605",
+        "rows": 16524642,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201606",
+        "rows": 16181366,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201607",
+        "rows": 16694873,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201608",
+        "rows": 16839510,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201609",
+        "rows": 16473693,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201610",
+        "rows": 17557264,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201611",
+        "rows": 17487012,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201612",
+        "rows": 18108364,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201701",
+        "rows": 17908094,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201702",
+        "rows": 16079619,
+        "duplicate_excess": 0
+      }
+    ],
+    "customers_without_member_record": 170178
+  },
+  "limits": "Flags identify review populations; they do not justify deletion. Only the named log release is scanned."
+}

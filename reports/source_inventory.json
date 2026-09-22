@@ -1,0 +1,134 @@
+{
+  "generated_utc": "2026-09-22T00:34:46.870337+00:00",
+  "scope": "file inventory only; not label reconciliation or temporal approval",
+  "files": [
+    {
+      "filename": "train.csv",
+      "size_bytes": 46667771,
+      "sha256": "14140a13139b9952686a85b70378c106da4cef43180a3cd50a2962ce64724767",
+      "rows_scanned": 992931,
+      "complete_scan": true,
+      "malformed_rows": 0,
+      "columns": [
+        "msno",
+        "is_churn"
+      ],
+      "missing_counts": {
+        "msno": 0,
+        "is_churn": 0
+      },
+      "dates": {},
+      "label_counts": {
+        "0": 929460,
+        "1": 63471,
+        "invalid": 0
+      }
+    },
+    {
+      "filename": "train_v2.csv",
+      "size_bytes": 45635134,
+      "sha256": "1f7590a3467174f5a147db3fb85dd1393074b6c13da0fd6e70af31bf37dee5cc",
+      "rows_scanned": 970960,
+      "complete_scan": true,
+      "malformed_rows": 0,
+      "columns": [
+        "msno",
+        "is_churn"
+      ],
+      "missing_counts": {
+        "msno": 0,
+        "is_churn": 0
+      },
+      "dates": {},
+      "label_counts": {
+        "0": 883630,
+        "1": 87330,
+        "invalid": 0
+      }
+    },
+    {
+      "filename": "transactions.csv",
+      "size_bytes": 1729298376,
+      "sha256": "537c269140742fc74b28ba83941dff7b0ca00974dd48b80994948b8917adddef",
+      "rows_scanned": 21547746,
+      "complete_scan": true,
+      "malformed_rows": 0,
+      "columns": [
+        "msno",
+        "payment_method_id",
+        "payment_plan_days",
+        "plan_list_price",
+        "actual_amount_paid",
+        "is_auto_renew",
+        "transaction_date",
+        "membership_expire_date",
+        "is_cancel"
+      ],
+      "missing_counts": {
+        "msno": 0,
+        "payment_method_id": 0,
+        "payment_plan_days": 0,
+        "plan_list_price": 0,
+        "actual_amount_paid": 0,
+        "is_auto_renew": 0,
+        "transaction_date": 0,
+        "membership_expire_date": 0,
+        "is_cancel": 0
+      },
+      "dates": {
+        "transaction_date": {
+          "min": "2015-01-01",
+          "max": "2017-02-28",
+          "invalid": 0
+        },
+        "membership_expire_date": {
+          "min": "1970-01-01",
+          "max": "2017-03-31",
+          "invalid": 0
+        }
+      }
+    },
+    {
+      "filename": "transactions_v2.csv",
+      "size_bytes": 115394513,
+      "sha256": "1d3015e32ed1661e9cfe813a9779b1b33e9d1d0829f1203633440045d4c6ea36",
+      "rows_scanned": 1431009,
+      "complete_scan": true,
+      "malformed_rows": 0,
+      "columns": [
+        "msno",
+        "payment_method_id",
+        "payment_plan_days",
+        "plan_list_price",
+        "actual_amount_paid",
+        "is_auto_renew",
+        "transaction_date",
+        "membership_expire_date",
+        "is_cancel"
+      ],
+      "missing_counts": {
+        "msno": 0,
+        "payment_method_id": 0,
+        "payment_plan_days": 0,
+        "plan_list_price": 0,
+        "actual_amount_paid": 0,
+        "is_auto_renew": 0,
+        "transaction_date": 0,
+        "membership_expire_date": 0,
+        "is_cancel": 0
+      },
+      "dates": {
+        "transaction_date": {
+          "min": "2015-01-01",
+          "max": "2017-03-31",
+          "invalid": 0
+        },
+        "membership_expire_date": {
+          "min": "2016-04-19",
+          "max": "2036-10-15",
+          "invalid": 0
+        }
+      }
+    }
+  ]
+}

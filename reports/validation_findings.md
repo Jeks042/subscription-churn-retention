@@ -1,6 +1,6 @@
 # Source validation findings
 
-**22 September 2026 — transaction SQL foundation built. Final source decision awaits completion of the original listening-log audit. Model fitting remains on hold.**
+**22 September 2026 — Milestone 1 complete with a scoped GO for retrospective SQL analysis. Milestone 2's transaction foundation is built and verified. Model fitting awaits complete features and source-version sensitivity work.**
 
 ## Source evidence
 
@@ -14,11 +14,13 @@ Authenticated Kaggle access and competition agreement acceptance are complete. T
 | transactions_v2.csv | 1,431,009 | 1,197,050 | 2015-01-01 through 2017-03-31 |
 | members_v3.csv | 6,769,473 | 6,769,473 | Registration 2004-03-26 through 2017-04-29 |
 | user_logs_v2.csv | 18,396,362 | 1,103,894 | 2017-03-01 through 2017-03-31 |
-| user_logs.csv | strict audit running | pending | Complete 30,514,081,415-byte extraction verified |
+| user_logs.csv | 392,106,543 | 5,234,111 | 2015-01-01 through 2017-02-28; all 26 months audited |
 
 Correction: the earlier six-field row at line 103,280,203 was at the end of an incomplete local extraction (8,037,335,040 bytes), not evidence of a malformed upstream record. A fresh extraction exited successfully and matches the archive's uncompressed size exactly. The incomplete copy and hardlink are quarantined with .incomplete extensions. No row was silently repaired or discarded. The audit now rejects a CSV whose size differs from the archive listing.
 
-Full label/transaction scans found no malformed-width rows or missing fields and recorded SHA-256 hashes. IDs in each label release are unique and labels are binary. Member and refreshed-log audits are complete; the original log's relational checks are finishing separately.
+Full label/transaction scans found no malformed-width rows or missing fields and recorded SHA-256 hashes. IDs in each label release are unique and labels are binary. Both listening releases passed strict parsing and have unique customer/date keys, no missing keys and no invalid dates. The original release's complete SHA-256 is recorded with its full audit.
+
+Source evidence: [label/transaction inventory](source_inventory.json), [refreshed log and member audit](refreshed_log_member_audit.json), and [complete original log audit](original_log_audit.json). All contain aggregates and metadata, not customer rows.
 
 ## Material findings
 
@@ -29,6 +31,7 @@ Full label/transaction scans found no malformed-width rows or missing fields and
 - **Label join coverage:** every supplied label customer has some transaction history. This alone does not establish pre-scoring coverage.
 - **Member snapshot:** 4,429,505 missing genders, 4,540,215 ages of zero and 5,651 ages outside 0–100. Future registrations and unknown historical availability prevent unrestricted use of this snapshot as predictors.
 - **Refreshed listening logs:** unique customer/date keys, valid dates, 4,200 rows above 86,400 seconds and 40 customers without a member record. Listening seconds are recorded activity, not validated wall-clock duration.
+- **Original listening logs:** 61,493 rows have negative seconds, 142,993 exceed 86,400 seconds, and 170,178 listening customers lack a member record. Preserve these quality/missing-member groups. Listening feature construction must explicitly flag anomalous durations and document its aggregation/sensitivity treatment; source records were not deleted.
 
 ## Label definition and reconciliation
 
@@ -50,11 +53,12 @@ The baseline freezes original transaction history and adds March-only v2 for Feb
 
 There are no ingestion timestamps. Dates establish a retrospective event-time study, not proof of operational availability at the historical scoring date. Member attributes are deferred. The [SQL workflow](../docs/sql_workflow.md) records every feature, source convention and assertion.
 
-## Completion gates
+## GO/NO-GO and handoff
 
-1. Finish the complete original log audit and record its date/key coverage.
-2. Completed: full SQL runner exits cleanly, passes all assertions and writes its source/code manifest. It stages 21,544,407 original rows and 1,069,822 March refreshed rows after exact deduplication.
-3. Record GO/NO-GO for the scoped retrospective SQL study; retain the restrictions on exact competition reproduction and model claims.
-4. Continue milestone 2 with validated listening features, coverage flags and aggregate renewal analysis.
+**GO to the retrospective SQL case study:** access, extraction integrity, source grains/keys, temporal coverage, explicit label construction, source-version sensitivity and calendar feasibility are documented. The full SQL runner exits cleanly, passes all assertions and writes its source/code manifest. It stages 21,544,407 original rows and 1,069,822 March refreshed rows after exact deduplication. Thirteen synthetic tests pass; the separate 7,000-record implementation comparison has no disagreements.
+
+**NO-GO for an exact competition-label reproduction or production-readiness claim:** 22 supplied-label mismatches remain unexplained, backdated release records materially change outcomes, and ingestion availability is unknown. These are recorded study limits rather than silently marked resolved. The original requirement is narrowed to a transparent retrospective cohort analysis, with these restrictions carried into milestone 3.
+
+Milestone 1 is complete as a feasibility decision for that scoped study. Milestone 2 remains open for listening features, anomaly/coverage/missingness flags and combined-table checks. The listening sources provide calendar coverage for the proposed 90-day windows; individual customer coverage still needs measurement. No model, financial uplift or intervention result has been produced.
 
 Reproduction: [validation workflow](../docs/validation_workflow.md). Public figures are aggregate diagnostics, not predictive performance or intervention impact.

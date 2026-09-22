@@ -1,0 +1,34 @@
+{
+  "members": {
+    "filename": "members_v3.csv",
+    "size_bytes": 427921437,
+    "sha256": "5bacf7d28ee97b7f017feca8650f84169cfcd97bad8995e81344c41e31989edd",
+    "row_count": 6769473,
+    "customers": 6769473,
+    "duplicate_key_excess": 0,
+    "missing_ids": 0,
+    "missing_gender": 4429505,
+    "zero_age": 4540215,
+    "age_outside_0_100": 5651,
+    "min_registration_date": "20040326",
+    "max_registration_date": "20170429",
+    "invalid_registration_dates": 0
+  },
+  "logs": {
+    "filename": "user_logs_v2.csv",
+    "size_bytes": 1431465728,
+    "sha256": "0188c4111de1c4fa4dc3fb6253542f14e142e4d05bbf2f3a4c1c345f0014bdce",
+    "row_count": 18396362,
+    "customers": 1103894,
+    "min_date": "20170301",
+    "max_date": "20170331",
+    "missing_keys": 0,
+    "invalid_dates": 0,
+    "negative_listening_seconds": 0,
+    "over_24h_listening_seconds": 4200,
+    "invalid_listening_seconds": 0,
+    "duplicate_customer_day_excess": 0,
+    "customers_without_member_record": 40
+  },
+  "limits": "Flags identify review populations; they do not justify deletion. Only the named log release is scanned."
+}

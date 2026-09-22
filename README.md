@@ -1,6 +1,6 @@
 # Subscription Churn & Retention Decision System
 
-**Status: transaction SQL foundation built and verified. Final source validation is completing; model fitting has not started.**
+**Status: Milestone 1 complete for the scoped retrospective study. Milestone 2 is underway; its transaction SQL foundation is built and verified. Model fitting has not started.**
 
 Start with the [current progress page](reports/progress.md), the [validation findings](reports/validation_findings.md), or the [SQL workflow and feature dictionary](docs/sql_workflow.md). The real-data build produced 4,384,573 eligible customer/date rows; all SQL assertions passed and independently implemented labels agree on 7,000 sampled records.
 
