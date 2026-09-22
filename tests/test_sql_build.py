@@ -35,8 +35,10 @@ class SqlBuildTests(unittest.TestCase):
             transaction_count_90d,subscription_recorded_amount_90d FROM transaction_features''').fetchone()
         self.assertEqual(actual,(2,3,5,500))
         before=self.con.execute('SELECT * FROM transaction_features').fetchall()
+        self.con.execute('CREATE TABLE model_features AS SELECT * FROM transaction_features')
         self.con.execute("UPDATE raw_original SET actual_amount_paid='7',membership_expire_date='20300101' WHERE transaction_date>='20170201'")
         build(self.con)
+        self.assertNotIn(('model_features',),self.con.execute('SHOW TABLES').fetchall())
         self.assertEqual(before,self.con.execute('SELECT * FROM transaction_features').fetchall())
         self.con.execute('INSERT INTO transaction_features SELECT * FROM transaction_features')
         with self.assertRaisesRegex(duckdb.Error,'Duplicate feature key'):

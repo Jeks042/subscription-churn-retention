@@ -1,6 +1,6 @@
 # Source validation findings
 
-**22 September 2026 — Milestone 1 complete with a scoped GO for retrospective SQL analysis. Milestone 2's transaction foundation is built and verified. Model fitting awaits complete features and source-version sensitivity work.**
+**22 September 2026 — Milestones 1 and 2 complete for retrospective SQL analysis. The combined feature table and training-only preprocessing are verified. Predictive evaluation and source-version sensitivity are next.**
 
 ## Source evidence
 
@@ -59,6 +59,6 @@ There are no ingestion timestamps. Dates establish a retrospective event-time st
 
 **NO-GO for an exact competition-label reproduction or production-readiness claim:** 22 supplied-label mismatches remain unexplained, backdated release records materially change outcomes, and ingestion availability is unknown. These are recorded study limits rather than silently marked resolved. The original requirement is narrowed to a transparent retrospective cohort analysis, with these restrictions carried into milestone 3.
 
-Milestone 1 is complete as a feasibility decision for that scoped study. Milestone 2 remains open for listening features, anomaly/coverage/missingness flags and combined-table checks. The listening sources provide calendar coverage for the proposed 90-day windows; individual customer coverage still needs measurement. No model, financial uplift or intervention result has been produced.
+Milestone 1 is complete as a feasibility decision for that scoped study. Milestone 2 is now complete: listening features, anomaly/coverage/missingness flags, combined-table checks and training-only fills are implemented and verified. All seven scoring dates have 90 source calendar days of listening coverage; individual observation and missingness are reported in [milestone 2 findings](milestone_2_findings.md). No predictive model, financial uplift or intervention result has been produced.
 
 Reproduction: [validation workflow](../docs/validation_workflow.md). Public figures are aggregate diagnostics, not predictive performance or intervention impact.

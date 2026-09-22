@@ -18,7 +18,7 @@ Build the analytical foundation for retention diagnosis and prediction.
 
 Acceptance: Features reproduce from the recorded source version; all feature events precede scoring; SQL joins reconcile to the eligible population. Historical ingestion availability cannot be verified in this source and must remain an explicit retrospective-study limitation.
 
-Transaction staging, cohort labels, renewal summaries, 7/30/90-day payment features and assertions are implemented. Listening features, missingness/coverage analysis and the final feature-table handoff remain in progress.
+Completed: transaction/listening staging and aggregation, cohort labels, renewal summaries, 7/30/90-day features, coverage/missingness analysis, assertions, training-only preprocessing and the final feature-table handoff. See [milestone 2 findings](../reports/milestone_2_findings.md).
 
 ## 3. Evaluate temporal baselines, calibration and capacity lift
 

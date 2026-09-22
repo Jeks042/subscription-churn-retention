@@ -1,0 +1,66 @@
+{
+  "sample_rows": 700,
+  "sample_per_scoring_date": 100,
+  "feature_values_checked": 16100,
+  "mismatches_by_feature": {},
+  "raw_missingness_by_date": [
+    {
+      "scoring_date": "2016-05-01",
+      "feature_rows": 575183,
+      "listening_bounded_seconds_7d_missing": 0,
+      "listening_bounded_seconds_30d_missing": 0,
+      "listening_bounded_seconds_90d_missing": 0,
+      "listening_recency_90d_missing": 106268
+    },
+    {
+      "scoring_date": "2016-06-01",
+      "feature_rows": 582690,
+      "listening_bounded_seconds_7d_missing": 0,
+      "listening_bounded_seconds_30d_missing": 0,
+      "listening_bounded_seconds_90d_missing": 0,
+      "listening_recency_90d_missing": 107785
+    },
+    {
+      "scoring_date": "2016-07-01",
+      "feature_rows": 598400,
+      "listening_bounded_seconds_7d_missing": 0,
+      "listening_bounded_seconds_30d_missing": 0,
+      "listening_bounded_seconds_90d_missing": 0,
+      "listening_recency_90d_missing": 111036
+    },
+    {
+      "scoring_date": "2016-08-01",
+      "feature_rows": 632984,
+      "listening_bounded_seconds_7d_missing": 0,
+      "listening_bounded_seconds_30d_missing": 0,
+      "listening_bounded_seconds_90d_missing": 0,
+      "listening_recency_90d_missing": 119922
+    },
+    {
+      "scoring_date": "2016-10-01",
+      "feature_rows": 649745,
+      "listening_bounded_seconds_7d_missing": 0,
+      "listening_bounded_seconds_30d_missing": 0,
+      "listening_bounded_seconds_90d_missing": 0,
+      "listening_recency_90d_missing": 123734
+    },
+    {
+      "scoring_date": "2016-12-01",
+      "feature_rows": 665170,
+      "listening_bounded_seconds_7d_missing": 0,
+      "listening_bounded_seconds_30d_missing": 0,
+      "listening_bounded_seconds_90d_missing": 0,
+      "listening_recency_90d_missing": 132224
+    },
+    {
+      "scoring_date": "2017-02-01",
+      "feature_rows": 680401,
+      "listening_bounded_seconds_7d_missing": 0,
+      "listening_bounded_seconds_30d_missing": 0,
+      "listening_bounded_seconds_90d_missing": 0,
+      "listening_recency_90d_missing": 133486
+    }
+  ],
+  "rows_with_other_missing_predictors": 0,
+  "comparison": "Independent Python aggregation vs SQL; not validation of operational availability"
+}

@@ -1,0 +1,557 @@
+{
+  "status": "milestone 2 full feature build passed; no model fitted",
+  "source": {
+    "filename": "user_logs.csv",
+    "size_bytes": 30514081415,
+    "sha256": "32d83038c86f7974b8f346bb7da1876a186248aa42c74a432517e70cf514d729",
+    "row_count": 392106543,
+    "customers": 5234111,
+    "min_date": "20150101",
+    "max_date": "20170228",
+    "missing_keys": 0,
+    "invalid_dates": 0,
+    "negative_listening_seconds": 61493,
+    "over_24h_listening_seconds": 142993,
+    "invalid_listening_seconds": 0,
+    "duplicate_customer_day_excess": 0,
+    "monthly_rows": [
+      {
+        "month": "201501",
+        "rows": 12897706,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201502",
+        "rows": 11457186,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201503",
+        "rows": 13233548,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201504",
+        "rows": 13146949,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201505",
+        "rows": 13477134,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201506",
+        "rows": 13111785,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201507",
+        "rows": 13186484,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201508",
+        "rows": 13428113,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201509",
+        "rows": 13559390,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201510",
+        "rows": 14403123,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201511",
+        "rows": 14370471,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201512",
+        "rows": 15043579,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201601",
+        "rows": 15117586,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201602",
+        "rows": 13936796,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201603",
+        "rows": 15998873,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201604",
+        "rows": 15883383,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201605",
+        "rows": 16524642,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201606",
+        "rows": 16181366,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201607",
+        "rows": 16694873,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201608",
+        "rows": 16839510,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201609",
+        "rows": 16473693,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201610",
+        "rows": 17557264,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201611",
+        "rows": 17487012,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201612",
+        "rows": 18108364,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201701",
+        "rows": 17908094,
+        "duplicate_excess": 0
+      },
+      {
+        "month": "201702",
+        "rows": 16079619,
+        "duplicate_excess": 0
+      }
+    ],
+    "customers_without_member_record": 170178
+  },
+  "audited_cache_sha256": "5b4fa32ee7bad710a812d9493042498046da1419017fd34a1908ed2773de7a5b",
+  "audit_report_sha256": "a21723d8eaa83b312542c236c14cce0c035e7a961f272d259ea07b7795ed11ce",
+  "feature_rows": 4384573,
+  "model_predictor_count": 38,
+  "model_predictors": [
+    "days_to_expiry",
+    "transaction_recency_days",
+    "transaction_coverage_days_90",
+    "transaction_count_7d",
+    "transaction_count_30d",
+    "transaction_count_90d",
+    "cancellation_count_90d",
+    "subscription_count_90d",
+    "auto_renew_flag_count_90d",
+    "subscription_recorded_amount_90d",
+    "expiry_before_event_count_90d",
+    "listening_log_days_7d",
+    "listening_bounded_seconds_7d",
+    "listening_usable_duration_days_7d",
+    "listening_negative_seconds_days_7d",
+    "listening_over_24h_days_7d",
+    "listening_missing_seconds_days_7d",
+    "listening_log_days_30d",
+    "listening_bounded_seconds_30d",
+    "listening_usable_duration_days_30d",
+    "listening_negative_seconds_days_30d",
+    "listening_over_24h_days_30d",
+    "listening_missing_seconds_days_30d",
+    "listening_log_days_90d",
+    "listening_bounded_seconds_90d",
+    "listening_usable_duration_days_90d",
+    "listening_negative_seconds_days_90d",
+    "listening_over_24h_days_90d",
+    "listening_missing_seconds_days_90d",
+    "log_source_days_7d",
+    "log_source_days_30d",
+    "log_source_days_90d",
+    "listening_recency_90d",
+    "no_listening_logs_90d",
+    "listening_bounded_seconds_7d_missing",
+    "listening_bounded_seconds_30d_missing",
+    "listening_bounded_seconds_90d_missing",
+    "listening_recency_90d_missing"
+  ],
+  "quality_by_scoring_date": [
+    {
+      "scoring_date": "2016-05-01",
+      "eligible_rows": 575183,
+      "no_logs_90d": 106268,
+      "no_logs_30d": 126324,
+      "customers_with_negative_seconds": 108,
+      "customers_with_capped_seconds": 2354,
+      "customers_with_missing_seconds": 0,
+      "missing_duration_total_90d": 0,
+      "min_source_calendar_days_90d": 90,
+      "mean_observed_log_days_90d": 37.61510336710229,
+      "without_member_record": 70937
+    },
+    {
+      "scoring_date": "2016-06-01",
+      "eligible_rows": 582690,
+      "no_logs_90d": 107785,
+      "no_logs_30d": 127606,
+      "customers_with_negative_seconds": 77,
+      "customers_with_capped_seconds": 2234,
+      "customers_with_missing_seconds": 0,
+      "missing_duration_total_90d": 0,
+      "min_source_calendar_days_90d": 90,
+      "mean_observed_log_days_90d": 38.552515059465584,
+      "without_member_record": 71175
+    },
+    {
+      "scoring_date": "2016-07-01",
+      "eligible_rows": 598400,
+      "no_logs_90d": 111036,
+      "no_logs_30d": 130783,
+      "customers_with_negative_seconds": 27,
+      "customers_with_capped_seconds": 2195,
+      "customers_with_missing_seconds": 0,
+      "missing_duration_total_90d": 0,
+      "min_source_calendar_days_90d": 90,
+      "mean_observed_log_days_90d": 38.4854679144385,
+      "without_member_record": 72535
+    },
+    {
+      "scoring_date": "2016-08-01",
+      "eligible_rows": 632984,
+      "no_logs_90d": 119922,
+      "no_logs_30d": 142019,
+      "customers_with_negative_seconds": 0,
+      "customers_with_capped_seconds": 2186,
+      "customers_with_missing_seconds": 0,
+      "missing_duration_total_90d": 0,
+      "min_source_calendar_days_90d": 90,
+      "mean_observed_log_days_90d": 37.5934668174867,
+      "without_member_record": 78259
+    },
+    {
+      "scoring_date": "2016-10-01",
+      "eligible_rows": 649745,
+      "no_logs_90d": 123734,
+      "no_logs_30d": 147607,
+      "customers_with_negative_seconds": 0,
+      "customers_with_capped_seconds": 2525,
+      "customers_with_missing_seconds": 0,
+      "missing_duration_total_90d": 0,
+      "min_source_calendar_days_90d": 90,
+      "mean_observed_log_days_90d": 36.985403504451746,
+      "without_member_record": 80530
+    },
+    {
+      "scoring_date": "2016-12-01",
+      "eligible_rows": 665170,
+      "no_logs_90d": 132224,
+      "no_logs_30d": 157617,
+      "customers_with_negative_seconds": 0,
+      "customers_with_capped_seconds": 2493,
+      "customers_with_missing_seconds": 0,
+      "missing_duration_total_90d": 0,
+      "min_source_calendar_days_90d": 90,
+      "mean_observed_log_days_90d": 37.65900747177413,
+      "without_member_record": 83386
+    },
+    {
+      "scoring_date": "2017-02-01",
+      "eligible_rows": 680401,
+      "no_logs_90d": 133486,
+      "no_logs_30d": 156384,
+      "customers_with_negative_seconds": 0,
+      "customers_with_capped_seconds": 3121,
+      "customers_with_missing_seconds": 0,
+      "missing_duration_total_90d": 0,
+      "min_source_calendar_days_90d": 90,
+      "mean_observed_log_days_90d": 37.73663912898423,
+      "without_member_record": 85887
+    }
+  ],
+  "renewal_by_engagement": [
+    {
+      "scoring_date": "2016-05-01",
+      "engagement_band": "0 recorded days",
+      "eligible_customers": 126324,
+      "mature_customers": 126324,
+      "censored_customers": 0,
+      "churn": 8148,
+      "renewed": 118176,
+      "renewal_rate": 0.935499192552484
+    },
+    {
+      "scoring_date": "2016-05-01",
+      "engagement_band": "1-7 recorded days",
+      "eligible_customers": 93818,
+      "mature_customers": 93818,
+      "censored_customers": 0,
+      "churn": 7800,
+      "renewed": 86018,
+      "renewal_rate": 0.9168603039928372
+    },
+    {
+      "scoring_date": "2016-05-01",
+      "engagement_band": "21-30 recorded days",
+      "eligible_customers": 193699,
+      "mature_customers": 193699,
+      "censored_customers": 0,
+      "churn": 9644,
+      "renewed": 184055,
+      "renewal_rate": 0.9502114104874058
+    },
+    {
+      "scoring_date": "2016-05-01",
+      "engagement_band": "8-20 recorded days",
+      "eligible_customers": 161342,
+      "mature_customers": 161342,
+      "censored_customers": 0,
+      "churn": 11213,
+      "renewed": 150129,
+      "renewal_rate": 0.9305016672658081
+    },
+    {
+      "scoring_date": "2016-06-01",
+      "engagement_band": "0 recorded days",
+      "eligible_customers": 127606,
+      "mature_customers": 127606,
+      "censored_customers": 0,
+      "churn": 6719,
+      "renewed": 120887,
+      "renewal_rate": 0.947345736093914
+    },
+    {
+      "scoring_date": "2016-06-01",
+      "engagement_band": "1-7 recorded days",
+      "eligible_customers": 97345,
+      "mature_customers": 97345,
+      "censored_customers": 0,
+      "churn": 8436,
+      "renewed": 88909,
+      "renewal_rate": 0.9133391545533925
+    },
+    {
+      "scoring_date": "2016-06-01",
+      "engagement_band": "21-30 recorded days",
+      "eligible_customers": 195350,
+      "mature_customers": 195350,
+      "censored_customers": 0,
+      "churn": 9673,
+      "renewed": 185677,
+      "renewal_rate": 0.9504837471205528
+    },
+    {
+      "scoring_date": "2016-06-01",
+      "engagement_band": "8-20 recorded days",
+      "eligible_customers": 162389,
+      "mature_customers": 162389,
+      "censored_customers": 0,
+      "churn": 11285,
+      "renewed": 151104,
+      "renewal_rate": 0.9305063766634439
+    },
+    {
+      "scoring_date": "2016-07-01",
+      "engagement_band": "0 recorded days",
+      "eligible_customers": 130783,
+      "mature_customers": 130783,
+      "censored_customers": 0,
+      "churn": 5221,
+      "renewed": 125562,
+      "renewal_rate": 0.9600789093383697
+    },
+    {
+      "scoring_date": "2016-07-01",
+      "engagement_band": "1-7 recorded days",
+      "eligible_customers": 101026,
+      "mature_customers": 101026,
+      "censored_customers": 0,
+      "churn": 7071,
+      "renewed": 93955,
+      "renewal_rate": 0.9300081167224279
+    },
+    {
+      "scoring_date": "2016-07-01",
+      "engagement_band": "21-30 recorded days",
+      "eligible_customers": 197047,
+      "mature_customers": 197047,
+      "censored_customers": 0,
+      "churn": 8159,
+      "renewed": 188888,
+      "renewal_rate": 0.9585936350210863
+    },
+    {
+      "scoring_date": "2016-07-01",
+      "engagement_band": "8-20 recorded days",
+      "eligible_customers": 169544,
+      "mature_customers": 169544,
+      "censored_customers": 0,
+      "churn": 10709,
+      "renewed": 158835,
+      "renewal_rate": 0.9368364554333978
+    },
+    {
+      "scoring_date": "2016-08-01",
+      "engagement_band": "0 recorded days",
+      "eligible_customers": 142019,
+      "mature_customers": 142019,
+      "censored_customers": 0,
+      "churn": 4482,
+      "renewed": 137537,
+      "renewal_rate": 0.9684408424224927
+    },
+    {
+      "scoring_date": "2016-08-01",
+      "engagement_band": "1-7 recorded days",
+      "eligible_customers": 111542,
+      "mature_customers": 111542,
+      "censored_customers": 0,
+      "churn": 7651,
+      "renewed": 103891,
+      "renewal_rate": 0.9314070036398845
+    },
+    {
+      "scoring_date": "2016-08-01",
+      "engagement_band": "21-30 recorded days",
+      "eligible_customers": 197994,
+      "mature_customers": 197994,
+      "censored_customers": 0,
+      "churn": 7830,
+      "renewed": 190164,
+      "renewal_rate": 0.9604533470711234
+    },
+    {
+      "scoring_date": "2016-08-01",
+      "engagement_band": "8-20 recorded days",
+      "eligible_customers": 181429,
+      "mature_customers": 181429,
+      "censored_customers": 0,
+      "churn": 10716,
+      "renewed": 170713,
+      "renewal_rate": 0.9409355725931356
+    },
+    {
+      "scoring_date": "2016-10-01",
+      "engagement_band": "0 recorded days",
+      "eligible_customers": 147607,
+      "mature_customers": 147607,
+      "censored_customers": 0,
+      "churn": 3462,
+      "renewed": 144145,
+      "renewal_rate": 0.9765458277723956
+    },
+    {
+      "scoring_date": "2016-10-01",
+      "engagement_band": "1-7 recorded days",
+      "eligible_customers": 112977,
+      "mature_customers": 112977,
+      "censored_customers": 0,
+      "churn": 7035,
+      "renewed": 105942,
+      "renewal_rate": 0.9377306885472264
+    },
+    {
+      "scoring_date": "2016-10-01",
+      "engagement_band": "21-30 recorded days",
+      "eligible_customers": 200326,
+      "mature_customers": 200326,
+      "censored_customers": 0,
+      "churn": 10474,
+      "renewed": 189852,
+      "renewal_rate": 0.9477152241845791
+    },
+    {
+      "scoring_date": "2016-10-01",
+      "engagement_band": "8-20 recorded days",
+      "eligible_customers": 188835,
+      "mature_customers": 188835,
+      "censored_customers": 0,
+      "churn": 12419,
+      "renewed": 176416,
+      "renewal_rate": 0.9342335901713136
+    },
+    {
+      "scoring_date": "2016-12-01",
+      "engagement_band": "0 recorded days",
+      "eligible_customers": 157617,
+      "mature_customers": 157617,
+      "censored_customers": 0,
+      "churn": 5393,
+      "renewed": 152224,
+      "renewal_rate": 0.965784147649048
+    },
+    {
+      "scoring_date": "2016-12-01",
+      "engagement_band": "1-7 recorded days",
+      "eligible_customers": 109078,
+      "mature_customers": 109078,
+      "censored_customers": 0,
+      "churn": 6199,
+      "renewed": 102879,
+      "renewal_rate": 0.9431691083444874
+    },
+    {
+      "scoring_date": "2016-12-01",
+      "engagement_band": "21-30 recorded days",
+      "eligible_customers": 219201,
+      "mature_customers": 219201,
+      "censored_customers": 0,
+      "churn": 12159,
+      "renewed": 207042,
+      "renewal_rate": 0.9445303625439665
+    },
+    {
+      "scoring_date": "2016-12-01",
+      "engagement_band": "8-20 recorded days",
+      "eligible_customers": 179274,
+      "mature_customers": 179274,
+      "censored_customers": 0,
+      "churn": 11424,
+      "renewed": 167850,
+      "renewal_rate": 0.9362763144683557
+    }
+  ],
+  "preprocessing": {
+    "training_rows": 2389257,
+    "latest_fit_scoring_date": "2016-08-01",
+    "listening_bounded_seconds_7d_median": 9590.368,
+    "listening_bounded_seconds_7d_observed_training_rows": 2389257,
+    "listening_bounded_seconds_30d_median": 47458.804000000004,
+    "listening_bounded_seconds_30d_observed_training_rows": 2389257,
+    "listening_bounded_seconds_90d_median": 145041.78499999997,
+    "listening_bounded_seconds_90d_observed_training_rows": 2389257,
+    "listening_recency_90d_median": 1.0,
+    "listening_recency_90d_observed_training_rows": 1944246
+  },
+  "assertions": "passed",
+  "sql_sha256": {
+    "001_stage_transactions.sql": "6d68631a2bf3cc0d0972dff3150a0fe5b65ce309a90e5f6ff153e300935c610d",
+    "002_cohorts.sql": "2391042accb77db0de32340cc7ed99dea41de0de48749b932d48c9b3cf1c66a7",
+    "003_transaction_features.sql": "666e8132e641a83816383d5628dfc5a1eaf63602080257305fd8fedd35c1f770",
+    "004_assertions.sql": "d90038cd6df5566f8b48a2058f2fb8a4dfa7865a5a2156e83e999a1a03802a13",
+    "005_listening_features.sql": "62d2d2597edf4436e5b625290cf634e14e60adabebc92386cb05c8899035f9a4",
+    "006_combine_features.sql": "8abcc2c94c194f33f01bbaf008240d2de48349a3d1bba547ef03b883027a3460",
+    "007_feature_assertions.sql": "da78d84d2360c41ea7f63204911009eff56b4b0f6eba10e58bfed5ed47ad4d7d"
+  },
+  "python_sha256": {
+    "build_listening.py": "6f53d6437cecd935c6df9738cba2983659f518d8c20cca3b055a0fcd86dca749",
+    "feature_contract.py": "74faeddf35f1b88220f26e7220298efef434da6ca645a4488406d6640f58ec76"
+  },
+  "limits": "Retrospective event dates, not proven ingestion availability. Observed log days do not prove customer tenure or inactivity on absent days. Member presence is diagnostic only. Labels remain separate."
+}

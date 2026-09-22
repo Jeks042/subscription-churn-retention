@@ -25,6 +25,11 @@ def configure(con, calendar=None, observed_until='2017-03-31'):
 
 
 def build(con):
+    # A rebuilt upstream cohort invalidates every dependent feature/preprocessing table.
+    for table in ('model_features','preprocessing_parameters','customer_features',
+                  'listening_features','feature_quality_summary','renewal_by_engagement',
+                  'log_source_calendar'):
+        con.execute('DROP TABLE IF EXISTS '+table)
     for filename in ('001_stage_transactions.sql','002_cohorts.sql',
                      '003_transaction_features.sql','004_assertions.sql'):
         print('Running ' + filename, flush=True)
@@ -39,8 +44,9 @@ def main():
     args.output_dir.mkdir(parents=True, exist_ok=True)
     # A failed rerun must not leave a stale success report.
     summary_path = args.output_dir / 'sql_build_summary.json'
-    if summary_path.exists():
-        summary_path.unlink()
+    for stale_report in (summary_path,args.output_dir/'listening_build_summary.json'):
+        if stale_report.exists():
+            stale_report.unlink()
     paths = {name: args.input_dir / filename for name, filename in
              [('raw_original','transactions.csv'),('raw_refresh','transactions_v2.csv')]}
     manifest = []

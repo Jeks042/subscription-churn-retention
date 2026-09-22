@@ -1,8 +1,8 @@
 # Subscription Churn & Retention Decision System
 
-**Status: Milestone 1 complete for the scoped retrospective study. Milestone 2 is underway; its transaction SQL foundation is built and verified. Model fitting has not started.**
+**Status: Milestones 1 and 2 complete for the scoped retrospective study. The full SQL feature pipeline is built and verified; predictive model fitting has not started.**
 
-Start with the [current progress page](reports/progress.md), the [validation findings](reports/validation_findings.md), or the [SQL workflow and feature dictionary](docs/sql_workflow.md). The real-data build produced 4,384,573 eligible customer/date rows; all SQL assertions passed and independently implemented labels agree on 7,000 sampled records.
+Start with the [current progress page](reports/progress.md), [milestone 2 findings](reports/milestone_2_findings.md), or the [SQL workflow and feature dictionary](docs/sql_workflow.md). The full build produced 4,384,573 eligible customer/date rows and 38 model-input features. All SQL assertions and 15 tests passed; independent checks found no differences in 7,000 sampled labels or 16,100 listening feature values.
 
 ## Business decision
 
@@ -27,12 +27,14 @@ This independent analytical case study uses the KKBox/WSDM subscription dataset 
 5. [Build Power BI executive report and decision memo](https://github.com/Jeks042/subscription-churn-retention/issues/5)
 6. [Verify reproducibility and publish the portfolio case study](https://github.com/Jeks042/subscription-churn-retention/issues/6)
 
-The first transaction portion of [Milestone 2](https://github.com/Jeks042/subscription-churn-retention/issues/2) is implemented. Data access, file coverage and label reconstruction are documented before any model fitting; supplied competition labels are diagnostic rather than interchangeable with reconstructed historical outcomes.
+[Milestone 2](https://github.com/Jeks042/subscription-churn-retention/issues/2) is complete. The [model handoff](docs/model_handoff.md) defines the next evaluation step. Data access, coverage and reconstruction are documented; supplied competition labels are diagnostic rather than interchangeable with reconstructed historical outcomes.
 
 ## Documentation
 
 - [Validation findings and outstanding gates](reports/validation_findings.md)
 - [Current progress](reports/progress.md)
+- [Milestone 2 findings](reports/milestone_2_findings.md)
+- [Model handoff](docs/model_handoff.md)
 - [SQL workflow and feature dictionary](docs/sql_workflow.md)
 - [Label and cutoff examples](docs/label_examples.md)
 - [Reproducible validation workflow](docs/validation_workflow.md)

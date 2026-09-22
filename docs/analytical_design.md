@@ -1,6 +1,6 @@
 # Analytical design
 
-**Design status: calendar v1 and transaction SQL implemented for a retrospective event-time study; model fitting and operational claims remain gated.**
+**Design status: calendar v1, combined transaction/listening SQL and training-only preprocessing are implemented for a retrospective event-time study. Predictive evaluation is the next milestone; operational availability remains unproven.**
 
 ## Population, grain and target
 
