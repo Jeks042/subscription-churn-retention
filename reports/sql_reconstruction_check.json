@@ -1,0 +1,36 @@
+{
+  "comparison": "SQL vs independent Python; not supplied-label agreement",
+  "sample_per_date": 1000,
+  "dates": {
+    "2016-10-01": {
+      "checked": 1000,
+      "disagreements": 0
+    },
+    "2016-12-01": {
+      "checked": 1000,
+      "disagreements": 0
+    },
+    "2017-02-01": {
+      "checked": 1000,
+      "disagreements": 0
+    },
+    "2016-05-01": {
+      "checked": 1000,
+      "disagreements": 0
+    },
+    "2016-06-01": {
+      "checked": 1000,
+      "disagreements": 0
+    },
+    "2016-07-01": {
+      "checked": 1000,
+      "disagreements": 0
+    },
+    "2016-08-01": {
+      "checked": 1000,
+      "disagreements": 0
+    }
+  },
+  "checked": 7000,
+  "disagreements": 0
+}

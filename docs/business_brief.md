@@ -31,3 +31,4 @@ Deliver a reproducible SQL/Python analysis, Power BI executive report, decision 
 ## Scope boundary
 
 No production customer contact, measured causal uplift claim, invented financial results or synthetic replacement presented as observed KKBox data. Historical results cannot establish present-day subscriber behaviour.
+

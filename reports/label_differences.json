@@ -1,0 +1,24 @@
+{
+  "sample_size": 2000,
+  "sample": "original labels ordered by MD5 identifier",
+  "expiry_month": "2017-02",
+  "baseline": "original + March-only refresh; all pre-scoring history",
+  "counts": {
+    "reconciled": 1787,
+    "supplied_match": 1744,
+    "supplied_0_baseline_0": 1655,
+    "supplied_mismatch": 43,
+    "supplied_0_baseline_1": 22,
+    "outside_expiry_cohort": 208,
+    "supplied_1_baseline_1": 89,
+    "supplied_1_baseline_0": 21,
+    "no_history": 5
+  },
+  "sensitivity": {
+    "mismatch_matches_after_including_backdated_refresh": 21,
+    "union_changes_status_or_label": 42,
+    "january_filter_changes_status_or_label": 74,
+    "mismatch_not_explained_by_these_two_changes": 22
+  },
+  "conclusion": "These comparisons diagnose disagreement, not definitive causes. Supplied labels are not ground truth for the separately defined historical cohorts."
+}

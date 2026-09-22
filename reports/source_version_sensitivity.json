@@ -1,0 +1,315 @@
+{
+  "lead_days": 7,
+  "history": "all pre-scoring events",
+  "limits": "Retrospective event dates, not proven ingestion availability. Reconstructed outcomes, not supplied labels. Full follow-up required even for early renewals. No model fitting.",
+  "cohorts": [
+    {
+      "scoring_date": "2016-05-01",
+      "source": "original_only",
+      "candidates": 739011,
+      "lead_eligible": 575183,
+      "mature_eligible": 575183,
+      "censored_eligible": 0,
+      "churn": 36805,
+      "non_churn": 538378
+    },
+    {
+      "scoring_date": "2016-05-01",
+      "source": "original_plus_march",
+      "candidates": 739011,
+      "lead_eligible": 575183,
+      "mature_eligible": 575183,
+      "censored_eligible": 0,
+      "churn": 36805,
+      "non_churn": 538378,
+      "versus_original": {
+        "added_candidates": 0,
+        "removed_candidates": 0,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 0
+      }
+    },
+    {
+      "scoring_date": "2016-05-01",
+      "source": "all_releases_diagnostic",
+      "candidates": 738315,
+      "lead_eligible": 574816,
+      "mature_eligible": 574816,
+      "censored_eligible": 0,
+      "churn": 32756,
+      "non_churn": 542060,
+      "versus_original": {
+        "added_candidates": 1,
+        "removed_candidates": 697,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 3683
+      }
+    },
+    {
+      "scoring_date": "2016-06-01",
+      "source": "original_only",
+      "candidates": 742821,
+      "lead_eligible": 582690,
+      "mature_eligible": 582690,
+      "censored_eligible": 0,
+      "churn": 36113,
+      "non_churn": 546577
+    },
+    {
+      "scoring_date": "2016-06-01",
+      "source": "original_plus_march",
+      "candidates": 742821,
+      "lead_eligible": 582690,
+      "mature_eligible": 582690,
+      "censored_eligible": 0,
+      "churn": 36113,
+      "non_churn": 546577,
+      "versus_original": {
+        "added_candidates": 0,
+        "removed_candidates": 0,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 0
+      }
+    },
+    {
+      "scoring_date": "2016-06-01",
+      "source": "all_releases_diagnostic",
+      "candidates": 742202,
+      "lead_eligible": 582378,
+      "mature_eligible": 582378,
+      "censored_eligible": 0,
+      "churn": 32408,
+      "non_churn": 549970,
+      "versus_original": {
+        "added_candidates": 1,
+        "removed_candidates": 620,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 3394
+      }
+    },
+    {
+      "scoring_date": "2016-07-01",
+      "source": "original_only",
+      "candidates": 766710,
+      "lead_eligible": 598400,
+      "mature_eligible": 598400,
+      "censored_eligible": 0,
+      "churn": 31160,
+      "non_churn": 567240
+    },
+    {
+      "scoring_date": "2016-07-01",
+      "source": "original_plus_march",
+      "candidates": 766710,
+      "lead_eligible": 598400,
+      "mature_eligible": 598400,
+      "censored_eligible": 0,
+      "churn": 31160,
+      "non_churn": 567240,
+      "versus_original": {
+        "added_candidates": 0,
+        "removed_candidates": 0,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 0
+      }
+    },
+    {
+      "scoring_date": "2016-07-01",
+      "source": "all_releases_diagnostic",
+      "candidates": 766155,
+      "lead_eligible": 598142,
+      "mature_eligible": 598142,
+      "censored_eligible": 0,
+      "churn": 27551,
+      "non_churn": 570591,
+      "versus_original": {
+        "added_candidates": 1,
+        "removed_candidates": 556,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 3350
+      }
+    },
+    {
+      "scoring_date": "2016-08-01",
+      "source": "original_only",
+      "candidates": 799459,
+      "lead_eligible": 632984,
+      "mature_eligible": 632984,
+      "censored_eligible": 0,
+      "churn": 30679,
+      "non_churn": 602305
+    },
+    {
+      "scoring_date": "2016-08-01",
+      "source": "original_plus_march",
+      "candidates": 799459,
+      "lead_eligible": 632984,
+      "mature_eligible": 632984,
+      "censored_eligible": 0,
+      "churn": 30679,
+      "non_churn": 602305,
+      "versus_original": {
+        "added_candidates": 0,
+        "removed_candidates": 0,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 0
+      }
+    },
+    {
+      "scoring_date": "2016-08-01",
+      "source": "all_releases_diagnostic",
+      "candidates": 798862,
+      "lead_eligible": 632666,
+      "mature_eligible": 632666,
+      "censored_eligible": 0,
+      "churn": 26612,
+      "non_churn": 606054,
+      "versus_original": {
+        "added_candidates": 1,
+        "removed_candidates": 598,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 3749
+      }
+    },
+    {
+      "scoring_date": "2016-10-01",
+      "source": "original_only",
+      "candidates": 835812,
+      "lead_eligible": 649745,
+      "mature_eligible": 649745,
+      "censored_eligible": 0,
+      "churn": 33390,
+      "non_churn": 616355
+    },
+    {
+      "scoring_date": "2016-10-01",
+      "source": "original_plus_march",
+      "candidates": 835812,
+      "lead_eligible": 649745,
+      "mature_eligible": 649745,
+      "censored_eligible": 0,
+      "churn": 33390,
+      "non_churn": 616355,
+      "versus_original": {
+        "added_candidates": 0,
+        "removed_candidates": 0,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 0
+      }
+    },
+    {
+      "scoring_date": "2016-10-01",
+      "source": "all_releases_diagnostic",
+      "candidates": 834820,
+      "lead_eligible": 649295,
+      "mature_eligible": 649295,
+      "censored_eligible": 0,
+      "churn": 24786,
+      "non_churn": 624509,
+      "versus_original": {
+        "added_candidates": 1,
+        "removed_candidates": 993,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 8154
+      }
+    },
+    {
+      "scoring_date": "2016-12-01",
+      "source": "original_only",
+      "candidates": 882127,
+      "lead_eligible": 665170,
+      "mature_eligible": 665170,
+      "censored_eligible": 0,
+      "churn": 35175,
+      "non_churn": 629995
+    },
+    {
+      "scoring_date": "2016-12-01",
+      "source": "original_plus_march",
+      "candidates": 882127,
+      "lead_eligible": 665170,
+      "mature_eligible": 665170,
+      "censored_eligible": 0,
+      "churn": 35175,
+      "non_churn": 629995,
+      "versus_original": {
+        "added_candidates": 0,
+        "removed_candidates": 0,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 0
+      }
+    },
+    {
+      "scoring_date": "2016-12-01",
+      "source": "all_releases_diagnostic",
+      "candidates": 880724,
+      "lead_eligible": 664404,
+      "mature_eligible": 664404,
+      "censored_eligible": 0,
+      "churn": 24471,
+      "non_churn": 639933,
+      "versus_original": {
+        "added_candidates": 1,
+        "removed_candidates": 1404,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 9940
+      }
+    },
+    {
+      "scoring_date": "2017-02-01",
+      "source": "original_only",
+      "candidates": 881535,
+      "lead_eligible": 680401,
+      "mature_eligible": 0,
+      "censored_eligible": 680401,
+      "churn": 0,
+      "non_churn": 0
+    },
+    {
+      "scoring_date": "2017-02-01",
+      "source": "original_plus_march",
+      "candidates": 881535,
+      "lead_eligible": 680401,
+      "mature_eligible": 680401,
+      "censored_eligible": 0,
+      "churn": 38037,
+      "non_churn": 642364,
+      "versus_original": {
+        "added_candidates": 0,
+        "removed_candidates": 0,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 0
+      }
+    },
+    {
+      "scoring_date": "2017-02-01",
+      "source": "all_releases_diagnostic",
+      "candidates": 879537,
+      "lead_eligible": 679310,
+      "mature_eligible": 679310,
+      "censored_eligible": 0,
+      "churn": 26420,
+      "non_churn": 652890,
+      "versus_original": {
+        "added_candidates": 1,
+        "removed_candidates": 1999,
+        "changed_expiry": 0,
+        "changed_lead_eligibility": 0,
+        "changed_mature_labels": 0
+      }
+    }
+  ]
+}

@@ -16,7 +16,9 @@ Acceptance: A reviewer can reproduce the source inventory, follow a renewal/canc
 
 Build the analytical foundation for retention diagnosis and prediction.
 
-Acceptance: Features reproduce from the recorded source version; all inputs were available at scoring; SQL joins reconcile to the eligible population.
+Acceptance: Features reproduce from the recorded source version; all feature events precede scoring; SQL joins reconcile to the eligible population. Historical ingestion availability cannot be verified in this source and must remain an explicit retrospective-study limitation.
+
+Transaction staging, cohort labels, renewal summaries, 7/30/90-day payment features and assertions are implemented. Listening features, missingness/coverage analysis and the final feature-table handoff remain in progress.
 
 ## 3. Evaluate temporal baselines, calibration and capacity lift
 

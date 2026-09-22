@@ -21,9 +21,10 @@ The final temporal test needs enough follow-up for every included expiry. A conv
 
 ## Access state
 
-Account sign-in and competition agreement acceptance verified on 22 September 2026. Acceptance followed explicit user confirmation. The labeller, both label releases, both transaction releases, members and both listening-log releases have been downloaded. The original log is present locally, but a strict parse stopped at line 103,280,203 on a malformed-width row (six fields where nine were expected); the full inventory and deterministic handling rule are still pending.
+Account sign-in and competition agreement acceptance verified on 22 September 2026. Acceptance followed explicit user confirmation. The labeller, both label releases, both transaction releases, members and both listening-log releases have been downloaded.
+
+Correction to the first log diagnosis: the six-field row at line 103,280,203 was at the end of an incomplete 8,037,335,040-byte extraction. The archive lists 30,514,081,415 uncompressed bytes. A fresh extraction completed with exit code zero and matches that size exactly. The authoritative local copy is `data/raw/original_logs_complete/user_logs.csv`; the shorter copy and its audit hardlink were moved into ignored `data/quarantine/` with `.incomplete` extensions to prevent accidental reuse. The complete file is undergoing a strict SQL audit. No source rows were repaired or discarded.
 
 ## Source-code boundary
 
 The supplied labeller treats a gap below 30 days as renewal and a gap of at least 30 as churn. It orders same-day plan events and allows cancellation to shorten the effective expiry before the first subsequent renewal. Our tests cover these boundaries. The supplied code remains in ignored local storage; it is not redistributed in the public repository.
-

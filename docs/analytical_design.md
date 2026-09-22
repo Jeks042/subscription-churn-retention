@@ -1,12 +1,12 @@
 # Analytical design
 
-**Design status: proposed; exact dates and source semantics must be validated in Milestone 1.**
+**Design status: calendar v1 and transaction SQL implemented for a retrospective event-time study; model fitting and operational claims remain gated.**
 
 ## Population, grain and target
 
 The intended grain is one eligible subscriber per scoring date. Eligibility must reflect customers who could actually receive an intervention before the relevant renewal decision.
 
-Working target: non-renewal within 30 days following subscription expiry, subject to confirmation against the official competition definition and transaction ordering. Cancellation flags alone are not assumed to equal churn. Renewals, refunds/cancellations, overlapping plans and multiple transactions require documented ordering rules.
+Implemented target: no recorded non-cancellation renewal with a gap below 30 days from effective expiry. A gap of exactly 30 days is churn. Cancellation flags alone are not churn. Source same-day ordering, a seven-day contact lead, and full original-expiry-plus-30-day follow-up are documented in the [label examples](label_examples.md) and [calendar](temporal_feasibility.md). Supplied competition labels are diagnostic; the study uses separately reconstructed historical cohorts.
 
 ## Time contract
 
@@ -20,7 +20,7 @@ A negative label requires complete follow-up through the grace window. Right-cen
 
 Training, tuning, calibration and final holdout move forward in time. Every training label must mature before the next evaluation scoring date. Overlapping outcome windows must be purged or separated by an appropriate gap.
 
-Do not invent historical churn labels or claim rolling validation before proving reconstruction is feasible. If the available files support only a narrower temporal comparison, revise the design and record its limits.
+Historical outcomes are reconstructed from recorded transactions using the published SQL contract. Source release sensitivity and missing ingestion timestamps limit this to retrospective event-time evaluation. The dataset does not support an exact competition reproduction or proven historical deployment claim.
 
 Recurring customers across time may be appropriate for an existing-subscriber use case. Customer IDs are not predictors; report overlap and use customer-aware uncertainty estimates. A new-customer generalisation claim requires its own evaluation.
 

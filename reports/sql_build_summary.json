@@ -1,0 +1,122 @@
+{
+  "status": "transaction foundation built; not model approval",
+  "source_policy": "original history + March-only refresh; exact duplicate analytical rows collapsed",
+  "time_basis": "retrospective event dates; operational ingestion dates unavailable",
+  "sources": [
+    {
+      "filename": "transactions.csv",
+      "bytes": 1729298376,
+      "sha256": "537c269140742fc74b28ba83941dff7b0ca00974dd48b80994948b8917adddef"
+    },
+    {
+      "filename": "transactions_v2.csv",
+      "bytes": 115394513,
+      "sha256": "1d3015e32ed1661e9cfe813a9779b1b33e9d1d0829f1203633440045d4c6ea36"
+    }
+  ],
+  "staged_rows": {
+    "original": 21544407,
+    "refresh_march": 1069822
+  },
+  "feature_rows": 4384573,
+  "assertions": "passed",
+  "cohorts": [
+    {
+      "scoring_date": "2016-05-01",
+      "split": "train",
+      "candidates": 739011,
+      "lead_eligible": 575183,
+      "mature_eligible": 575183,
+      "censored_eligible": 0,
+      "churn": 36805,
+      "renewed": 538378,
+      "churn_rate": 0.06398833067041272,
+      "renewal_rate": 0.9360116693295872,
+      "latest_maturity": "2016-06-30"
+    },
+    {
+      "scoring_date": "2016-06-01",
+      "split": "train",
+      "candidates": 742821,
+      "lead_eligible": 582690,
+      "mature_eligible": 582690,
+      "censored_eligible": 0,
+      "churn": 36113,
+      "renewed": 546577,
+      "churn_rate": 0.061976351061456346,
+      "renewal_rate": 0.9380236489385436,
+      "latest_maturity": "2016-07-30"
+    },
+    {
+      "scoring_date": "2016-07-01",
+      "split": "train",
+      "candidates": 766710,
+      "lead_eligible": 598400,
+      "mature_eligible": 598400,
+      "censored_eligible": 0,
+      "churn": 31160,
+      "renewed": 567240,
+      "churn_rate": 0.05207219251336898,
+      "renewal_rate": 0.947927807486631,
+      "latest_maturity": "2016-08-30"
+    },
+    {
+      "scoring_date": "2016-08-01",
+      "split": "train",
+      "candidates": 799459,
+      "lead_eligible": 632984,
+      "mature_eligible": 632984,
+      "censored_eligible": 0,
+      "churn": 30679,
+      "renewed": 602305,
+      "churn_rate": 0.04846725983595162,
+      "renewal_rate": 0.9515327401640484,
+      "latest_maturity": "2016-09-30"
+    },
+    {
+      "scoring_date": "2016-10-01",
+      "split": "selection",
+      "candidates": 835812,
+      "lead_eligible": 649745,
+      "mature_eligible": 649745,
+      "censored_eligible": 0,
+      "churn": 33390,
+      "renewed": 616355,
+      "churn_rate": 0.05138939122271045,
+      "renewal_rate": 0.9486106087772895,
+      "latest_maturity": "2016-11-30"
+    },
+    {
+      "scoring_date": "2016-12-01",
+      "split": "calibration",
+      "candidates": 882127,
+      "lead_eligible": 665170,
+      "mature_eligible": 665170,
+      "censored_eligible": 0,
+      "churn": 35175,
+      "renewed": 629995,
+      "churn_rate": 0.05288121833516244,
+      "renewal_rate": 0.9471187816648375,
+      "latest_maturity": "2017-01-30"
+    },
+    {
+      "scoring_date": "2017-02-01",
+      "split": "holdout",
+      "candidates": 881535,
+      "lead_eligible": 680401,
+      "mature_eligible": 680401,
+      "censored_eligible": 0,
+      "churn": 38037,
+      "renewed": 642364,
+      "churn_rate": 0.055903797907410485,
+      "renewal_rate": 0.9440962020925895,
+      "latest_maturity": "2017-03-30"
+    }
+  ],
+  "sql_sha256": {
+    "001_stage_transactions.sql": "6d68631a2bf3cc0d0972dff3150a0fe5b65ce309a90e5f6ff153e300935c610d",
+    "002_cohorts.sql": "2391042accb77db0de32340cc7ed99dea41de0de48749b932d48c9b3cf1c66a7",
+    "003_transaction_features.sql": "666e8132e641a83816383d5628dfc5a1eaf63602080257305fd8fedd35c1f770",
+    "004_assertions.sql": "d90038cd6df5566f8b48a2058f2fb8a4dfa7865a5a2156e83e999a1a03802a13"
+  }
+}

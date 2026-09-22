@@ -9,3 +9,4 @@
 | 2026-09-22 | Keep restricted data outside Git | Competition rules govern access and redistribution. |
 
 Open decisions: source versions and storage requirements; valid label reconstruction; scoring population and lead time; calendar cutoffs; SQL engine; feasible compute footprint; commercial assumptions and permitted aggregate publication.
+
