@@ -2,7 +2,9 @@
 
 ## Current position
 
-Milestones 1 and 2 are complete. Milestone 3 is in progress: baseline fitting, October model selection and December calibration are complete. The combined logistic regression is frozen under the predeclared rule; final February evaluation has not yet started. The [evaluation plan](../docs/evaluation_plan.md), [model freeze](model_freeze.json) and [reproduction workflow](../docs/model_workflow.md) record the procedure before final evaluation. All 21 tests pass.
+Milestones 1–3 are complete for the scoped retrospective study. The frozen combined logistic regression has been evaluated on 680,401 February customers, with calibration, capacity scenarios, customer-bootstrap intervals, segment diagnostics and source sensitivity. Read the [milestone 3 findings and chart](milestone_3_findings.md). All 21 tests pass and an independent check matches all 96 reported model metric values.
+
+At 10% contact capacity, the model captures 66.13% of reconstructed churn with 36.97% precision and 6.61× lift. The main limitation is source dependence: on the common eligible population, precision falls from 35.85% to 23.39% under alternative labels. These results support commercial scenario analysis, not a claim that an intervention saved customers.
 
 ## What exists
 
@@ -14,7 +16,10 @@ flowchart LR
   C --> E[Future renewal outcomes]
   D --> F[Key and time-boundary checks]
   E --> F
-  F --> G[Cohort summaries and later model inputs]
+  F --> G[Training and October model selection]
+  G --> H[December probability calibration]
+  H --> I[Frozen February evaluation]
+  I --> J[Capacity and source-sensitivity findings]
 ```
 
 Features describe what happened before scoring. Labels describe what happened afterwards. Keeping those tables separate makes accidental use of future information easier to detect.
@@ -25,9 +30,12 @@ Features describe what happened before scoring. Labels describe what happened af
 - Reconstructed cohorts at seven dates, with 4,384,573 outreach-eligible customer/date rows.
 - Versioned SQL for staging, cohort labels, transaction/listening features, coverage and assertions.
 - A combined 4,384,573-row feature table and explicit 38-predictor model input, with training-only fills.
-- Fifteen passing synthetic tests, including future-data leakage, duplicate inflation, churn boundaries and training-only preparation.
+- Twenty-one passing synthetic tests, including future-data leakage, duplicate inflation, churn boundaries, training-only preparation, weighted model metrics and capacity accounting.
 - SQL/Python label agreement on 7,000 sampled real customer/date records.
 - Independent listening agreement on 16,100 values across 700 sampled customer/date records.
+- Five baseline families plus a duration ablation; a published model freeze before final evaluation.
+- Customer-bootstrap uncertainty, calibration charts, overlap/segment/drift checks and fixed-score alternative-label sensitivity.
+- Independent verification of 96 final-test metrics across six models with no differences.
 
 ## Findings that matter
 
@@ -38,6 +46,9 @@ Backdated transactions in the refreshed release change historical outcomes. The 
 ## Where to look
 
 - [Validation findings](validation_findings.md)
+- [Milestone 3 findings and chart](milestone_3_findings.md)
+- [Model evaluation workflow](../docs/model_workflow.md)
+- [Commercial handoff](../docs/commercial_handoff.md)
 - [Milestone 2 findings and coverage](milestone_2_findings.md)
 - [SQL workflow and feature dictionary](../docs/sql_workflow.md)
 - [Model handoff](../docs/model_handoff.md)
@@ -45,5 +56,6 @@ Backdated transactions in the refreshed release change historical outcomes. The 
 - [Synthetic label examples](../docs/label_examples.md)
 - [Milestone 1 issue](https://github.com/Jeks042/subscription-churn-retention/issues/1)
 - [Milestone 2 issue](https://github.com/Jeks042/subscription-churn-retention/issues/2)
+- [Milestone 3 issue](https://github.com/Jeks042/subscription-churn-retention/issues/3)
 
-Next: run the frozen February evaluation, customer-bootstrap intervals, segment checks and fixed-score source-label sensitivity. Source-version sensitivity and 22 unexplained supplied-label mismatches remain explicit limits on model claims. No user action is currently required.
+Next: [milestone 4](https://github.com/Jeks042/subscription-churn-retention/issues/4) — contribution-value assumptions, contact/offer costs, break-even retention scenarios and a randomised intervention proposal. Source-version sensitivity, 22 unexplained supplied-label differences and unknown ingestion availability remain explicit limits. No user action is currently required.

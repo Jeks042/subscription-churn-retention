@@ -1,6 +1,6 @@
 # Analytical design
 
-**Design status: calendar v1, combined transaction/listening SQL and training-only preprocessing are implemented for a retrospective event-time study. Predictive evaluation is the next milestone; operational availability remains unproven.**
+**Design status: milestones 1–3 complete for a retrospective event-time study. The frozen temporal evaluation, calibration, capacity scenarios and sensitivity checks are published in the [milestone 3 findings](../reports/milestone_3_findings.md). Operational availability remains unproven; commercial scenarios are next.**
 
 ## Population, grain and target
 

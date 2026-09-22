@@ -1,8 +1,10 @@
 # Subscription Churn & Retention Decision System
 
-**Status: Milestones 1 and 2 complete for the scoped retrospective study. The full SQL feature pipeline is built and verified; predictive model fitting has not started.**
+**Status: Milestones 1–3 complete for the scoped retrospective study. Reproducible SQL features and a frozen temporal model evaluation are published. Next: commercial scenarios and experiment design.**
 
-Start with the [current progress page](reports/progress.md), [milestone 2 findings](reports/milestone_2_findings.md), or the [SQL workflow and feature dictionary](docs/sql_workflow.md). The full build produced 4,384,573 eligible customer/date rows and 38 model-input features. All SQL assertions and 15 tests passed; independent checks found no differences in 7,000 sampled labels or 16,100 listening feature values.
+Start with the [milestone 3 findings](reports/milestone_3_findings.md) or [current progress page](reports/progress.md). On 680,401 final-test customers, the frozen combined logistic model captures 66.13% of reconstructed churn at 10% contact capacity (36.97% precision; 6.61× lift). Source sensitivity materially changes expected results: matched-population precision falls from 35.85% to 23.39% under alternative labels. These are historical targeting results, not retained customers or realised savings.
+
+The SQL foundation has 4,384,573 customer/date rows and 38 input features. All 21 tests pass; independent checks agree on 7,000 sampled labels, 16,100 listening values and 96 model metric values. See the [SQL dictionary](docs/sql_workflow.md) and [model reproduction workflow](docs/model_workflow.md).
 
 ## Business decision
 
@@ -27,12 +29,16 @@ This independent analytical case study uses the KKBox/WSDM subscription dataset 
 5. [Build Power BI executive report and decision memo](https://github.com/Jeks042/subscription-churn-retention/issues/5)
 6. [Verify reproducibility and publish the portfolio case study](https://github.com/Jeks042/subscription-churn-retention/issues/6)
 
-[Milestone 2](https://github.com/Jeks042/subscription-churn-retention/issues/2) is complete. The [model handoff](docs/model_handoff.md) defines the next evaluation step. Data access, coverage and reconstruction are documented; supplied competition labels are diagnostic rather than interchangeable with reconstructed historical outcomes.
+[Milestone 3](https://github.com/Jeks042/subscription-churn-retention/issues/3) is complete. The [commercial handoff](docs/commercial_handoff.md) carries capacity scenarios, source sensitivity and interpretation limits into milestone 4. Supplied competition labels remain diagnostic rather than interchangeable with reconstructed historical outcomes.
 
 ## Documentation
 
 - [Validation findings and outstanding gates](reports/validation_findings.md)
 - [Current progress](reports/progress.md)
+- [Milestone 3 findings and charts](reports/milestone_3_findings.md)
+- [Frozen evaluation plan](docs/evaluation_plan.md)
+- [Model reproduction workflow](docs/model_workflow.md)
+- [Commercial handoff](docs/commercial_handoff.md)
 - [Milestone 2 findings](reports/milestone_2_findings.md)
 - [Model handoff](docs/model_handoff.md)
 - [SQL workflow and feature dictionary](docs/sql_workflow.md)
@@ -58,7 +64,7 @@ This independent analytical case study uses the KKBox/WSDM subscription dataset 
 | reports/ | Validated aggregate findings and decision records |
 | dashboard/ | Power BI specification and public screenshots |
 
-Tools: Python 3.13 and DuckDB 1.5.5 for validation and SQL construction; Power BI planned for reporting. Dependencies are pinned in requirements.txt. The workflows run locally against authorised source files; modelling and dashboards are not yet implemented.
+Tools: Python 3.13, DuckDB 1.5.5, NumPy 2.3.3, scikit-learn 1.7.2 and Matplotlib 3.10.6; Power BI reporting remains planned. Direct dependencies are pinned in requirements.txt and the recorded environment in requirements-lock.txt. Workflows run locally against authorised source files.
 
 ## Data source
 

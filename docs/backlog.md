@@ -28,6 +28,8 @@ Assess whether risk scoring improves retention prioritisation on future observat
 
 Acceptance: A frozen model is evaluated once on the final holdout, with benchmark comparisons and uncertainty. Weak results are reported honestly and may justify retaining a simple rule.
 
+Completed: frozen baseline selection and calibration, one-shot February evaluation, customer-bootstrap intervals, capacity/segment/drift diagnostics, duration ablation and fixed-score source-label sensitivity. All 21 tests and an independent 96-value metric check pass. See [milestone 3 findings](../reports/milestone_3_findings.md). Full alternative-source retraining and operational claims are outside this declared retrospective scope.
+
 ## 4. Assess retention capacity and commercial thresholds
 
 [Issue #4](https://github.com/Jeks042/subscription-churn-retention/issues/4) · Depends on: #3

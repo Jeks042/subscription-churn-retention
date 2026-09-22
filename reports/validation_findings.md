@@ -47,7 +47,7 @@ Consequently, supplied labels are diagnostic only. The SQL study uses explicitly
 
 Machine-readable evidence: [release sensitivity](source_version_sensitivity.json), [supplied-label differences](label_differences.json), [SQL run manifest](sql_build_summary.json), and [independent SQL/Python check](sql_reconstruction_check.json). These files contain aggregates only.
 
-[Calendar v1](../docs/temporal_feasibility.md) contains 4,384,573 eligible records across seven scoring dates, with seven-day intervention lead and complete expiry-plus-30-day follow-up. Training, selection, calibration and holdout are separated by maturity gaps. No model is fitted.
+[Calendar v1](../docs/temporal_feasibility.md) contains 4,384,573 eligible records across seven scoring dates, with seven-day intervention lead and complete expiry-plus-30-day follow-up. Training, selection, calibration and holdout are separated by maturity gaps. No model was fitted during this validation stage; subsequent evaluation is documented separately.
 
 The baseline freezes original transaction history and adds March-only v2 for February follow-up. The full union is a sensitivity case. February has 680,401 eligible customers and 38,037 churn outcomes under baseline versus 679,310 and 26,420 under full union. This material dependence must be addressed in later model evaluation; no version is claimed to be definitive operational truth.
 
@@ -59,6 +59,6 @@ There are no ingestion timestamps. Dates establish a retrospective event-time st
 
 **NO-GO for an exact competition-label reproduction or production-readiness claim:** 22 supplied-label mismatches remain unexplained, backdated release records materially change outcomes, and ingestion availability is unknown. These are recorded study limits rather than silently marked resolved. The original requirement is narrowed to a transparent retrospective cohort analysis, with these restrictions carried into milestone 3.
 
-Milestone 1 is complete as a feasibility decision for that scoped study. Milestone 2 is now complete: listening features, anomaly/coverage/missingness flags, combined-table checks and training-only fills are implemented and verified. All seven scoring dates have 90 source calendar days of listening coverage; individual observation and missingness are reported in [milestone 2 findings](milestone_2_findings.md). No predictive model, financial uplift or intervention result has been produced.
+Milestone 1 is complete as a feasibility decision for that scoped study. Milestone 2 is now complete: listening features, anomaly/coverage/missingness flags, combined-table checks and training-only fills are implemented and verified. All seven scoring dates have 90 source calendar days of listening coverage; individual observation and missingness are reported in [milestone 2 findings](milestone_2_findings.md). Milestone 3 has subsequently completed the [frozen predictive evaluation](milestone_3_findings.md); no financial uplift or intervention result has been produced.
 
-Reproduction: [validation workflow](../docs/validation_workflow.md). Public figures are aggregate diagnostics, not predictive performance or intervention impact.
+Reproduction: [validation workflow](../docs/validation_workflow.md). Figures on this page are source-validation aggregates. Predictive evidence is in milestone 3; neither establishes intervention impact.

@@ -23,9 +23,15 @@ The recorded run uses Python 3.13. Install `requirements-lock.txt` for the exact
   --output-dir data/models/v1 `
   --sensitivity-database data/models/sensitivity/source_sensitivity.duckdb `
   --log-database data/validation/original_complete/auxiliary.duckdb
+
+./.venv/Scripts/python.exe src/verify_model_metrics.py `
+  --run-dir data/models/v1 `
+  --output reports/model_metric_check.json
 ```
 
 The fitting stage reads training, October selection and December calibration data. It chooses a base model under the frozen rule and writes `model_freeze.json` before the final-evaluation command. The freeze records exact model parameters, scaler parameters, calibration coefficients, selection results, package versions and hashes. The fitted bundle remains private.
+
+The recorded run completed successfully. Read the [findings](../reports/milestone_3_findings.md), [full evaluation](../reports/model_evaluation.json) and [independent metric check](../reports/model_metric_check.json). The independent check recomputes 96 aggregate values across six models using scikit-learn and separate top-k counts; it verifies saved predictions without fitting or selecting a model again.
 
 The evaluation stage verifies the freeze and feature evidence, then exclusively creates `holdout_started.json` before loading the final customer outcomes. It refuses to run again in that output directory. A failed downstream report retains the marker and private prediction/metric checkpoints; inspect and recover the report without retuning or deleting the holdout history. Independent reproduction in a new directory should reproduce the same frozen procedure and must not become a way to tune on the already-seen final test.
 
