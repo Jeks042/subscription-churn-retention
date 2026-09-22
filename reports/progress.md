@@ -2,7 +2,7 @@
 
 ## Current position
 
-Milestones 1 and 2 are complete for the scoped retrospective study. The combined transaction/listening pipeline has completed a successful full-data run, including its assertions, training-only preprocessing and source/code manifest. Predictive model fitting has not started.
+Milestones 1 and 2 are complete. Milestone 3 is in progress: baseline fitting, October model selection and December calibration are complete. The combined logistic regression is frozen under the predeclared rule; final February evaluation has not yet started. The [evaluation plan](../docs/evaluation_plan.md), [model freeze](model_freeze.json) and [reproduction workflow](../docs/model_workflow.md) record the procedure before final evaluation. All 21 tests pass.
 
 ## What exists
 
@@ -46,4 +46,4 @@ Backdated transactions in the refreshed release change historical outcomes. The 
 - [Milestone 1 issue](https://github.com/Jeks042/subscription-churn-retention/issues/1)
 - [Milestone 2 issue](https://github.com/Jeks042/subscription-churn-retention/issues/2)
 
-Next: milestone 3 — evaluate simple baselines, calibration and capacity lift on the frozen temporal calendar. Source-version sensitivity and 22 unexplained supplied-label mismatches remain explicit limits on model claims. Holdout outcomes are excluded from engagement exploration. No user action is currently required.
+Next: run the frozen February evaluation, customer-bootstrap intervals, segment checks and fixed-score source-label sensitivity. Source-version sensitivity and 22 unexplained supplied-label mismatches remain explicit limits on model claims. No user action is currently required.

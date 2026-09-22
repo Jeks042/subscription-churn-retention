@@ -1,0 +1,36 @@
+{
+  "source": "audited all_tx full release union",
+  "assertions": "passed",
+  "cohorts": [
+    {
+      "scoring_date": "2016-10-01",
+      "split": "selection",
+      "candidates": 834820,
+      "lead_eligible": 649295,
+      "mature_eligible": 649295,
+      "censored_eligible": 0,
+      "churn": 24786,
+      "non_churn": 624509
+    },
+    {
+      "scoring_date": "2016-12-01",
+      "split": "calibration",
+      "candidates": 880724,
+      "lead_eligible": 664404,
+      "mature_eligible": 664404,
+      "censored_eligible": 0,
+      "churn": 24471,
+      "non_churn": 639933
+    },
+    {
+      "scoring_date": "2017-02-01",
+      "split": "holdout",
+      "candidates": 879537,
+      "lead_eligible": 679310,
+      "mature_eligible": 679310,
+      "censored_eligible": 0,
+      "churn": 26420,
+      "non_churn": 652890
+    }
+  ]
+}
