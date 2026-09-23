@@ -2,7 +2,7 @@
 
 ## Current position
 
-Milestones 1–6 are complete for the scoped retrospective study. The fresh rebuild passed in 28.9 minutes, with output reconciliation, publication review and CV/LinkedIn drafts. Read the [milestone 6 findings](milestone_6_findings.md) or the [portfolio case study](https://jeks042.github.io/subscription-churn-retention.html). Your seven replacement screenshots remain in the [milestone 5 report](milestone_5_findings.md).
+Milestones 1–6 are complete for the scoped retrospective study. The fresh rebuild passed in 28.9 minutes, with output reconciliation and publication review. Read the [milestone 6 findings](milestone_6_findings.md) or the [portfolio case study](https://jeks042.github.io/subscription-churn-retention.html). The seven dashboard views are available in the [milestone 5 report](milestone_5_findings.md).
 
 Under the assumed 60 CU retained contribution and 3.50 CU contact/offer cost, the matched 10% list needs to save 16.27% of would-be churners under baseline labels versus 24.94% under refreshed labels. A 20% save assumption produces a surplus in one source case and a loss in the other. The decision is further validation before a controlled pilot. No campaign or incremental retention has been measured.
 

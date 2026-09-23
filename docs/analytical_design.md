@@ -1,6 +1,6 @@
 # Analytical design
 
-**Design status: milestones 1–4 complete for a retrospective event-time study. Frozen model evaluation, hypothetical commercial scenarios and an experiment proposal are published in the [milestone 4 findings](../reports/milestone_4_findings.md). Operational availability and actual intervention effects remain unproven; Power BI reporting and the decision memo are next.**
+**Design status: the retrospective study is complete, including temporal evaluation, commercial scenarios, the Power BI report and final reproduction review. Read the [decision memo](../reports/decision_memo.md) and [reproduction findings](../reports/milestone_6_findings.md). Operational availability and actual intervention effects remain unproven.**
 
 ## Population, grain and target
 

@@ -33,7 +33,7 @@ On other platforms use the environment's Python executable in place of the Windo
 
 The runner supports `--code-root` for testing a separate published checkout. It records each stage's exit status, wall time, installed packages and, on Windows, the sampled peak working set of the direct stage process. A Windows virtual environment may launch a child interpreter, so that direct-process counter can measure only the launcher; it must not be used for capacity planning. Milestone 6 used a separate process-tree monitor for its reported memory observation. Output bytes exclude raw inputs, the environment and temporary spill files.
 
-The dashboard check validates the committed report. It deliberately does not regenerate or replace the author's final report layout or screenshots. Power BI Desktop refresh and slicer behaviour were checked separately in [milestone 5](../reports/milestone_5_findings.md). The Microsoft schema check requires internet access.
+The dashboard check validates the committed report. It deliberately does not regenerate or replace the published report layout or screenshots. Power BI Desktop refresh and slicer behaviour were checked separately in [milestone 5](../reports/milestone_5_findings.md). The Microsoft schema check requires internet access.
 
 ## Reading the results
 

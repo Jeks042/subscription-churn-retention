@@ -27,8 +27,8 @@
 | 2026-09-22 | Carry both source cases through break-even | Matched 10% conditional thresholds are 16.27% and 24.94%; a 20% save scenario changes the sign of contribution. Do not select a source by profitability. |
 | 2026-09-22 | Complete milestone 4 with further-validation decision | 28 tests and 5,604 independent economic checks pass. A proposed 1:1 experiment separates statistical improvement from commercial relevance. No outreach, random assignment or measured savings occurred. |
 
-| 2026-09-23 | Preserve author-supplied dashboard screenshots | Seven replacement images are published byte-for-byte, including the selected-scenario view. |
+| 2026-09-23 | Publish dashboard evidence | Seven dashboard views include the selected-scenario result. |
 | 2026-09-23 | Preserve committed bytes across Windows Git checkouts | `.gitattributes` prevents automatic line-ending conversion from invalidating evidence hashes. |
-| 2026-09-23 | Complete final reproduction and portfolio publication | A fresh environment rebuilt the frozen procedure into separate private outputs; headline results reconciled and numerical refit variation was documented. Publish the bounded case study and draft career wording without claiming measured savings or a deployed intervention. |
+| 2026-09-23 | Complete final reproduction and portfolio publication | A fresh environment rebuilt the frozen procedure into separate private outputs; headline results reconciled and numerical refit variation was documented. Publish the case study with explicit limitations on measured savings and deployment. |
 
 All six delivery milestones are complete for the retrospective scope. See the [final record](../reports/milestone_6_findings.md). Operational validation and a prospective experiment remain separate future work.

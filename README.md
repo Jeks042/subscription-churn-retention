@@ -44,7 +44,6 @@ All six milestones are complete within the declared retrospective scope. Supplie
 
 - [Final reproduction and publication record](reports/milestone_6_findings.md)
 - [Full reproduction workflow](docs/reproduction_workflow.md)
-- [CV/project wording and LinkedIn draft](docs/portfolio_wording.md)
 
 - [Validation findings and outstanding gates](reports/validation_findings.md)
 - [Current progress](reports/progress.md)

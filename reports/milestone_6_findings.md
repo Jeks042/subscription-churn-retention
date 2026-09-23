@@ -1,8 +1,8 @@
 # Milestone 6 — Reproduction and portfolio publication
 
-The scoped retrospective study is complete. The fresh source-to-commercial run passed all 15 stages, with headline counts and commercial scenarios unchanged. Detailed numerical refit differences are documented below; this is analytical reproduction, not bit-for-bit model reproduction. The original model freeze, evaluation and the author's seven replacement screenshots remain the decision record.
+The scoped retrospective study is complete. The fresh source-to-commercial run passed all 15 stages, with headline counts and commercial scenarios unchanged. Detailed numerical refit differences are documented below; this is analytical reproduction, not bit-for-bit model reproduction. The original model freeze, evaluation and the seven published dashboard views remain the decision record.
 
-Read the [portfolio case study](https://jeks042.github.io/subscription-churn-retention.html), [decision memo](decision_memo.md), [dashboard evidence](milestone_5_findings.md) or [CV and LinkedIn drafts](../docs/portfolio_wording.md).
+Read the [portfolio case study](https://jeks042.github.io/subscription-churn-retention.html), [decision memo](decision_memo.md) and [dashboard evidence](milestone_5_findings.md).
 
 ## Fresh reproduction
 
@@ -37,8 +37,7 @@ This is a repeat of the frozen procedure for reproducibility, not another model-
 ## Publication and consistency review
 
 - The final README leads with the decision and distinguishes full-cohort model evaluation from matched-population commercial scenarios.
-- The portfolio case study is linked from the homepage and case-study index, and uses all seven author-supplied screenshots. Local desktop/mobile checks confirmed readable layout without horizontal page overflow and successful image loading.
-- CV project bullets and a concise LinkedIn post are saved as drafts. No LinkedIn post was sent and no personal CV was modified.
+- The portfolio case study is linked from the homepage and case-study index, and uses all seven dashboard views. Local desktop/mobile checks confirmed readable layout without horizontal page overflow and successful image loading.
 - The published-tree review covered 196 files, including 108 JSON documents and 14 decoded Power BI aggregate payloads. No restricted source/extract files, executable fitted bundles or unresolved credential/identifier-pattern findings were found. Four `msno` key hits were aggregate missing-count fields. Pattern screening is not a guarantee against every secret type and does not constitute a forensic audit of all Git history.
 - Windows Git line-ending conversion was fixed using `.gitattributes`, preserving original committed bytes and evidence hashes.
 

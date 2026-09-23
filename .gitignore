@@ -34,3 +34,8 @@ outputs/
 Thumbs.db
 **/.pbi/
 **/.platform
+
+# Personal career material belongs outside this public project
+private/
+career-notes/
+docs/portfolio_wording.md

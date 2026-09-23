@@ -56,6 +56,6 @@ Milestone 5 is complete: six-page portable Power BI report, 14 aggregate tables,
 
 Complete a defensible flagship case study with consistent public evidence.
 
-Acceptance: Repository, portfolio, dashboard and CV agree; another authorised analyst can reproduce the results. No LinkedIn posting or CV claims before final review.
+Acceptance: Repository, case study and dashboard agree; another authorised analyst can reproduce and review the results.
 
-Completed: fresh source-to-commercial reproduction with measured runtime/resources, output reconciliation, public-content and claims review, final README, live portfolio case study and evidence-based CV/LinkedIn drafts. See [milestone 6](../reports/milestone_6_findings.md). No LinkedIn post was sent and no personal CV was edited.
+Completed: fresh source-to-commercial reproduction with measured runtime/resources, output reconciliation, public-content and claims review, final README and live portfolio case study. See [milestone 6](../reports/milestone_6_findings.md).

@@ -20,7 +20,7 @@ The overview matches 680,401 eligible customers, 5.59% churn, 66.13% recall and 
 
 ## Review images
 
-Screenshots refreshed on 23 September 2026 using the author's replacement captures.
+Dashboard views published on 23 September 2026.
 
 ![Overview](../dashboard/screenshots/01_overview.png)
 ![Cohorts and segments](../dashboard/screenshots/02_cohorts_segments.png)
@@ -34,4 +34,4 @@ Screenshots refreshed on 23 September 2026 using the author's replacement captur
 
 This report does not establish operational readiness or realised savings. Source-version dependence, 22 unresolved supplied-label differences, unknown historical ingestion availability and unmeasured treatment effects remain explicit. No cloud report or campaign was published.
 
-[Milestone 6](https://github.com/Jeks042/subscription-churn-retention/issues/6) is next: final reproducibility, consistency and portfolio review.
+The [final reproduction and consistency review](milestone_6_findings.md) is complete.
