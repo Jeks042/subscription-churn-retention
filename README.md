@@ -1,14 +1,19 @@
 # Subscription Churn & Retention Decision System
 
-**Status: Milestones 1–5 complete for the scoped retrospective study. The six-page Power BI report and executive decision memo are ready. Next: final reproducibility and portfolio review.**
+**Decision: validate operational data and economics before funding a controlled retention pilot.**
 
-Start with the [milestone 5 report and screenshots](reports/milestone_5_findings.md), [Power BI project](dashboard/README.md) or [decision memo](reports/decision_memo.md). All 28 tests, 2,196 dashboard checks and 75 Microsoft schema validations pass.
+This independent KKBox portfolio study connects reproducible SQL, temporal risk evaluation, retention economics and Power BI reporting. All six delivery milestones are complete for the scoped retrospective study.
 
-Start with the [milestone 4 findings](reports/milestone_4_findings.md) or [current progress page](reports/progress.md). With assumed 60 CU retained contribution and 3.50 CU contact/offer cost, the matched 10% list requires conditional saves of 16.27% under baseline labels versus 24.94% under refreshed labels. A 20% save assumption changes from surplus to loss across sources. The decision is further validation before a controlled pilot; no campaign or savings has been measured.
+[Read the portfolio case study](https://jeks042.github.io/subscription-churn-retention.html) · [View the dashboard](reports/milestone_5_findings.md) · [Read the decision memo](reports/decision_memo.md) · [Reproduce the analysis](docs/reproduction_workflow.md)
 
-The [frozen model evaluation](reports/milestone_3_findings.md) captures 66.13% of reconstructed churn at 10% capacity on 680,401 final-test customers (36.97% precision; 6.61× lift). Source sensitivity and missing-record segments constrain interpretation.
+## Validated result
 
-The SQL foundation has 4,384,573 customer/date rows and 38 input features. All 28 tests pass; independent checks agree on 7,000 sampled labels, 16,100 listening values, 96 model metrics and 5,604 commercial values. See the [SQL dictionary](docs/sql_workflow.md), [model workflow](docs/model_workflow.md) and [commercial workflow](docs/commercial_workflow.md).
+- **4,384,573 customer/date rows and 38 predictors**, built from past events across seven scoring dates.
+- **680,401 final-test customers:** the selected model captures **66.13%** of reconstructed churn at 10% capacity, with **36.97% precision** and **6.61× lift**.
+- **Source-sensitive economics:** on the matched population, the required conditional save rate rises from **16.27% to 24.94%** under alternative labels, assuming 60 CU retained contribution and 3.50 CU contact/offer cost. A 20% save scenario changes from +54,445 CU to −47,087 CU.
+- **Fresh reproduction completed with documented numerical variation:** 28 tests, 2,196 dashboard checks and 75 Microsoft schema validations, with independent checks and a review of refit differences. See the [measured milestone 6 record](reports/milestone_6_findings.md).
+
+The model's full-cohort list has 68,040 contacts; commercial source comparisons use 67,930 contacts among common customers. Commercial amounts are illustrative generic currency units. No retention campaign, realised savings or causal treatment effect has been measured.
 
 ## Business decision
 
@@ -33,9 +38,13 @@ This independent analytical case study uses the KKBox/WSDM subscription dataset 
 5. [Build Power BI executive report and decision memo](https://github.com/Jeks042/subscription-churn-retention/issues/5)
 6. [Verify reproducibility and publish the portfolio case study](https://github.com/Jeks042/subscription-churn-retention/issues/6)
 
-[Milestone 4](https://github.com/Jeks042/subscription-churn-retention/issues/4) is complete. The [dashboard handoff](docs/dashboard_handoff.md) carries the validated evidence and scenario definitions into milestone 5. Supplied competition labels remain diagnostic rather than interchangeable with reconstructed historical outcomes.
+All six milestones are complete within the declared retrospective scope. Supplied competition labels remain diagnostic rather than interchangeable with reconstructed historical outcomes. Historical ingestion availability and treatment responsiveness remain unverified.
 
 ## Documentation
+
+- [Final reproduction and publication record](reports/milestone_6_findings.md)
+- [Full reproduction workflow](docs/reproduction_workflow.md)
+- [CV/project wording and LinkedIn draft](docs/portfolio_wording.md)
 
 - [Validation findings and outstanding gates](reports/validation_findings.md)
 - [Current progress](reports/progress.md)

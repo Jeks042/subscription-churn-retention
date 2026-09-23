@@ -1,0 +1,720 @@
+{
+  "execution": {
+    "started_utc": "2026-09-23T12:29:14.171465+00:00",
+    "python": "3.13.7",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "logical_cpus": 12,
+    "free_disk_before_bytes": 1650466078720,
+    "status": "passed",
+    "stages": [
+      {
+        "stage": "labels",
+        "seconds": 5.01,
+        "exit_code": 0
+      },
+      {
+        "stage": "transactions",
+        "seconds": 41.02,
+        "exit_code": 0
+      },
+      {
+        "stage": "listening_audit",
+        "seconds": 940.33,
+        "exit_code": 0
+      },
+      {
+        "stage": "sql",
+        "seconds": 203.09,
+        "exit_code": 0
+      },
+      {
+        "stage": "listening_features",
+        "seconds": 229.13,
+        "exit_code": 0
+      },
+      {
+        "stage": "label_check",
+        "seconds": 5.01,
+        "exit_code": 0
+      },
+      {
+        "stage": "listening_check",
+        "seconds": 10.01,
+        "exit_code": 0
+      },
+      {
+        "stage": "source_sensitivity",
+        "seconds": 38.02,
+        "exit_code": 0
+      },
+      {
+        "stage": "fit",
+        "seconds": 152.07,
+        "exit_code": 0
+      },
+      {
+        "stage": "evaluate",
+        "seconds": 60.03,
+        "exit_code": 0
+      },
+      {
+        "stage": "model_check",
+        "seconds": 11.01,
+        "exit_code": 0
+      },
+      {
+        "stage": "commercial",
+        "seconds": 32.02,
+        "exit_code": 0
+      },
+      {
+        "stage": "commercial_check",
+        "seconds": 1.01,
+        "exit_code": 0
+      },
+      {
+        "stage": "tests",
+        "seconds": 4.01,
+        "exit_code": 0
+      },
+      {
+        "stage": "dashboard",
+        "seconds": 3.01,
+        "exit_code": 0
+      }
+    ],
+    "environment": [
+      "attrs==26.1.0",
+      "cloudpickle==3.1.2",
+      "contourpy==1.4.0",
+      "cycler==0.12.1",
+      "duckdb==1.5.5",
+      "fonttools==4.65.0",
+      "joblib==1.6.0",
+      "jsonschema==4.26.0",
+      "jsonschema-specifications==2025.9.1",
+      "kiwisolver==1.5.1",
+      "matplotlib==3.10.6",
+      "numpy==2.3.3",
+      "packaging==26.3",
+      "pillow==12.3.0",
+      "pyparsing==3.3.3",
+      "python-dateutil==2.9.0.post0",
+      "referencing==0.37.0",
+      "rpds-py==2026.6.3",
+      "scikit-learn==1.7.2",
+      "scipy==1.18.1",
+      "six==1.17.0",
+      "threadpoolctl==3.7.0"
+    ],
+    "elapsed_seconds": 1736.82,
+    "output_bytes": 16466248499,
+    "free_disk_after_bytes": 1628915027968,
+    "analytical_code_commit": "b7850c47c8c039ba10c93a3d7740a2dcd62fa385",
+    "installed_ram_bytes": 68410261504,
+    "required_raw_input_bytes": 32878998646,
+    "resource_observation": {
+      "started_utc": "2026-09-23T12:37:07.1505232Z",
+      "sample_interval_seconds": 5,
+      "samples": 246,
+      "peak_sampled_process_tree_working_set_bytes": 5372952576,
+      "last_working_set_bytes": 61554688,
+      "scope": "Runner and descendants. Monitoring began during original-log ingestion; earlier label/transaction stages are excluded. Sampled working set, not minimum RAM or commit peak."
+    },
+    "scope": "Fresh environment and new raw-to-commercial outputs. Original decision freeze preserved. Published dashboard validated; author layout/screenshots not regenerated. Desktop validation belongs to milestone 5."
+  },
+  "strict_comparison_summary": {
+    "status": "differences_require_review",
+    "files_compared": 13,
+    "values_checked": {
+      "numeric": 14715,
+      "other": 3762
+    },
+    "integer_rule": "exact",
+    "float_relative_tolerance": 1e-08,
+    "float_absolute_tolerance": 1e-08,
+    "max_absolute_numeric_difference": 3.3239234660868533,
+    "provenance_fields_excluded": [
+      "listening_build_summary.json/audit_report_sha256",
+      "listening_build_summary.json/audited_cache_sha256",
+      "model_freeze.json/feature_manifest_sha256",
+      "model_freeze.json/frozen_utc",
+      "model_freeze.json/model_bundle_sha256",
+      "model_freeze.json/python",
+      "model_evaluation.json/freeze_sha256",
+      "model_evaluation.json/holdout_marker_sha256",
+      "model_evaluation.json/sensitivity_build_report_sha256",
+      "commercial_evaluation.json/input_sha256"
+    ]
+  },
+  "reviewed_reconciliation": {
+    "status": "accepted_with_documented_numerical_variation",
+    "strict_comparison_status": "differences_require_review",
+    "strict_difference_count": 1451,
+    "differences_by_report": {
+      "sql_build_summary.json": 1,
+      "model_freeze.json": 48,
+      "model_evaluation.json": 107,
+      "commercial_evaluation.json": 1295
+    },
+    "feature_comparison": {
+      "joined_rows": 4384573,
+      "features": {
+        "days_to_expiry": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "transaction_recency_days": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "transaction_coverage_days_90": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "transaction_count_7d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "transaction_count_30d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "transaction_count_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "cancellation_count_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "subscription_count_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "auto_renew_flag_count_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "subscription_recorded_amount_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "expiry_before_event_count_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_log_days_7d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_bounded_seconds_7d": {
+          "different_values": 755535,
+          "max_absolute_difference": 1.1641532182693481e-10
+        },
+        "listening_usable_duration_days_7d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_negative_seconds_days_7d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_over_24h_days_7d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_missing_seconds_days_7d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_log_days_30d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_bounded_seconds_30d": {
+          "different_values": 1721692,
+          "max_absolute_difference": 1.3969838619232178e-09
+        },
+        "listening_usable_duration_days_30d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_negative_seconds_days_30d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_over_24h_days_30d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_missing_seconds_days_30d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_log_days_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_bounded_seconds_90d": {
+          "different_values": 2312698,
+          "max_absolute_difference": 8.381903171539307e-09
+        },
+        "listening_usable_duration_days_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_negative_seconds_days_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_over_24h_days_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_missing_seconds_days_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "log_source_days_7d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "log_source_days_30d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "log_source_days_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_recency_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "no_listening_logs_90d": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_bounded_seconds_7d_missing": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_bounded_seconds_30d_missing": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_bounded_seconds_90d_missing": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        },
+        "listening_recency_90d_missing": {
+          "different_values": 0,
+          "max_absolute_difference": 0.0
+        }
+      }
+    },
+    "selected_model": "combined",
+    "headline_capacity_counts_precision_recall_lift": "exact at 5%, 10% and 20%",
+    "matched_10pct_risk_only_uniform_scenarios": "all 12 scenario dictionaries exact",
+    "headline_commercial_scenarios": [
+      {
+        "source_case": "common_baseline",
+        "scenario": "adverse_1pp",
+        "net_contribution_cu": -278513.0,
+        "break_even_conditional_save": 0.1627344284736482
+      },
+      {
+        "source_case": "common_baseline",
+        "scenario": "downside",
+        "net_contribution_cu": -431680.0,
+        "break_even_conditional_save": 0.5424480949121606
+      },
+      {
+        "source_case": "common_baseline",
+        "scenario": "zero_effect",
+        "net_contribution_cu": -237755.0,
+        "break_even_conditional_save": 0.1627344284736482
+      },
+      {
+        "source_case": "common_baseline",
+        "scenario": "reference_10pct_save",
+        "net_contribution_cu": -91655.0,
+        "break_even_conditional_save": 0.1627344284736482
+      },
+      {
+        "source_case": "common_baseline",
+        "scenario": "reference_20pct_save",
+        "net_contribution_cu": 54445.0,
+        "break_even_conditional_save": 0.1627344284736482
+      },
+      {
+        "source_case": "common_baseline",
+        "scenario": "optimistic",
+        "net_contribution_cu": 290202.5,
+        "break_even_conditional_save": 0.058119438740588635
+      },
+      {
+        "source_case": "common_full_union",
+        "scenario": "adverse_1pp",
+        "net_contribution_cu": -278513.0,
+        "break_even_conditional_save": 0.2493916126460654
+      },
+      {
+        "source_case": "common_full_union",
+        "scenario": "downside",
+        "net_contribution_cu": -446909.8,
+        "break_even_conditional_save": 0.8313053754868847
+      },
+      {
+        "source_case": "common_full_union",
+        "scenario": "zero_effect",
+        "net_contribution_cu": -237755.0,
+        "break_even_conditional_save": 0.2493916126460654
+      },
+      {
+        "source_case": "common_full_union",
+        "scenario": "reference_10pct_save",
+        "net_contribution_cu": -142421.0,
+        "break_even_conditional_save": 0.2493916126460654
+      },
+      {
+        "source_case": "common_full_union",
+        "scenario": "reference_20pct_save",
+        "net_contribution_cu": -47087.0,
+        "break_even_conditional_save": 0.2493916126460654
+      },
+      {
+        "source_case": "common_full_union",
+        "scenario": "optimistic",
+        "net_contribution_cu": 148057.7,
+        "break_even_conditional_save": 0.08906843308788051
+      }
+    ],
+    "scenario_profit_sign_changes": 0,
+    "max_scenario_net_contribution_difference_cu": 3.3239234660868533,
+    "integer_differences": [
+      {
+        "path": "model_freeze.json/model_parameters/combined/iterations",
+        "expected": 105,
+        "actual": 103
+      },
+      {
+        "path": "model_evaluation.json/models/combined/calibration_bins/1/rows",
+        "expected": 44847,
+        "actual": 44846
+      },
+      {
+        "path": "model_evaluation.json/models/combined/calibration_bins/2/rows",
+        "expected": 17032,
+        "actual": 17033
+      },
+      {
+        "path": "model_evaluation.json/models/combined/calibration_bins/5/rows",
+        "expected": 2513,
+        "actual": 2514
+      },
+      {
+        "path": "model_evaluation.json/models/combined/calibration_bins/6/rows",
+        "expected": 10544,
+        "actual": 10543
+      },
+      {
+        "path": "model_evaluation.json/segments_selected_model/seen_in_training/global_policy/0.2/contacted",
+        "expected": 58409,
+        "actual": 58408
+      },
+      {
+        "path": "model_evaluation.json/segments_selected_model/unseen_in_training/global_policy/0.2/contacted",
+        "expected": 77671,
+        "actual": 77672
+      },
+      {
+        "path": "model_evaluation.json/source_sensitivity/1/baseline_labels/fn_10pct",
+        "expected": 10375,
+        "actual": 10374
+      },
+      {
+        "path": "model_evaluation.json/source_sensitivity/1/baseline_labels/fp_10pct",
+        "expected": 42404,
+        "actual": 42403
+      },
+      {
+        "path": "model_evaluation.json/source_sensitivity/1/baseline_labels/tp_10pct",
+        "expected": 24036,
+        "actual": 24037
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/0/displaced_vs_other_policy",
+        "expected": 6927,
+        "actual": 6928
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/0/floor_index_contacts",
+        "expected": 11921,
+        "actual": 11922
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/0/overlap_with_other_policy",
+        "expected": 27093,
+        "actual": 27092
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/1/displaced_vs_other_policy",
+        "expected": 6927,
+        "actual": 6928
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/1/floor_index_contacts",
+        "expected": 11921,
+        "actual": 11922
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/1/overlap_with_other_policy",
+        "expected": 27093,
+        "actual": 27092
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/2/displaced_vs_other_policy",
+        "expected": 6927,
+        "actual": 6928
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/2/overlap_with_other_policy",
+        "expected": 27093,
+        "actual": 27092
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/3/displaced_vs_other_policy",
+        "expected": 6927,
+        "actual": 6928
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/3/overlap_with_other_policy",
+        "expected": 27093,
+        "actual": 27092
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/20/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/20/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/21/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/21/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/22/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/22/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/23/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/23/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/32/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/32/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/33/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/33/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/34/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/34/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/35/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/35/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/36/displaced_vs_other_policy",
+        "expected": 6927,
+        "actual": 6928
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/36/floor_index_contacts",
+        "expected": 11921,
+        "actual": 11922
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/36/overlap_with_other_policy",
+        "expected": 27093,
+        "actual": 27092
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/37/displaced_vs_other_policy",
+        "expected": 6927,
+        "actual": 6928
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/37/floor_index_contacts",
+        "expected": 11921,
+        "actual": 11922
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/37/overlap_with_other_policy",
+        "expected": 27093,
+        "actual": 27092
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/38/displaced_vs_other_policy",
+        "expected": 6927,
+        "actual": 6928
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/38/overlap_with_other_policy",
+        "expected": 27093,
+        "actual": 27092
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/39/displaced_vs_other_policy",
+        "expected": 6927,
+        "actual": 6928
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/39/overlap_with_other_policy",
+        "expected": 27093,
+        "actual": 27092
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/56/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/56/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/57/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/57/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/58/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/58/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/59/displaced_vs_other_policy",
+        "expected": 8433,
+        "actual": 8434
+      },
+      {
+        "path": "commercial_evaluation.json/policy_profiles/59/overlap_with_other_policy",
+        "expected": 127428,
+        "actual": 127427
+      }
+    ],
+    "sql_manifest_review": "Original transaction-only report recorded SQL 001\u2013004; the later builder records all seven SQL files. All original hashes match and every added hash matches committed SQL.",
+    "numerical_review": "Three bounded-duration sums differ by at most 8.39e-9 seconds; the other 35 predictor columns are identical. Combined logistic optimisation stopped after 103 iterations versus 105. Small score changes move individual records across some diagnostic bin and policy boundaries. The strict comparator remains nonzero; no tolerance was loosened or original result overwritten.",
+    "interpretation": "Fresh source-to-output analytical reproduction accepted with explicitly reported numerical variation. Not bit-for-bit fitted-model or customer-list reproduction. Published decision, model selection, headline metrics at displayed precision and all scenario profit signs are unchanged."
+  },
+  "content_review": {
+    "scope": "Published working tree at b7850c47c8c039ba10c93a3d7740a2dcd62fa385; not a forensic audit of all Git history.",
+    "tracked_files": 196,
+    "text_files_scanned": 189,
+    "json_documents_scanned": 108,
+    "png_screenshots": 7,
+    "decoded_aggregate_tables": [
+      "Overview",
+      "Models",
+      "Capacity",
+      "Calibration",
+      "Segments",
+      "Cohorts",
+      "Source",
+      "Profiles",
+      "Scenarios",
+      "Scenario choices",
+      "Comparison",
+      "Power",
+      "Commercial power",
+      "Sensitivity grid"
+    ],
+    "limitations": "Pattern-based secret and identifier screening can have false negatives. Source code references to column names are expected. Public model_freeze.json is the intentional parameter/evidence record; no executable fitted model bundle is published.",
+    "reviewed_findings": [
+      {
+        "path": "reports/source_inventory.json",
+        "kind": "data_key",
+        "key": "msno"
+      },
+      {
+        "path": "reports/source_inventory.json",
+        "kind": "data_key",
+        "key": "msno"
+      },
+      {
+        "path": "reports/source_inventory.json",
+        "kind": "data_key",
+        "key": "msno"
+      },
+      {
+        "path": "reports/source_inventory.json",
+        "kind": "data_key",
+        "key": "msno"
+      }
+    ],
+    "finding_resolution": "Four msno keys in source_inventory.json are zero missing-value counts, not customer identifiers. No unresolved findings.",
+    "unresolved_findings": []
+  }
+}

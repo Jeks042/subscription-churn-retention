@@ -48,12 +48,14 @@ Create a stakeholder-ready account of risk, evidence and retention choices.
 
 Acceptance: A stakeholder can understand what decision is supported, what remains uncertain and what evidence a retention intervention still needs. Dashboard numbers match source analysis tables.
 
-## 6. Verify reproducibility and publish the portfolio case study
-
 Milestone 5 is complete: six-page portable Power BI report, 14 aggregate tables, 51 DAX measures, Desktop review and screenshots, plus executive decision memo. All 28 tests, 2,196 dashboard checks and 75 Microsoft schema checks pass. See [milestone 5 findings](../reports/milestone_5_findings.md).
+
+## 6. Verify reproducibility and publish the portfolio case study
 
 [Issue #6](https://github.com/Jeks042/subscription-churn-retention/issues/6) · Depends on: #5
 
 Complete a defensible flagship case study with consistent public evidence.
 
 Acceptance: Repository, portfolio, dashboard and CV agree; another authorised analyst can reproduce the results. No LinkedIn posting or CV claims before final review.
+
+Completed: fresh source-to-commercial reproduction with measured runtime/resources, output reconciliation, public-content and claims review, final README, live portfolio case study and evidence-based CV/LinkedIn drafts. See [milestone 6](../reports/milestone_6_findings.md). No LinkedIn post was sent and no personal CV was edited.
