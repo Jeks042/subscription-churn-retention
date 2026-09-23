@@ -1,0 +1,3 @@
+# Preserve committed bytes across platforms: manifests hash reports, code and SQL.
+# Existing evidence contains both LF and CRLF; do not normalise historical files.
+* -text
