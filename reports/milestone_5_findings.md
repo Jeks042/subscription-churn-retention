@@ -20,12 +20,14 @@ The overview matches 680,401 eligible customers, 5.59% churn, 66.13% recall and 
 
 ## Review images
 
+Screenshots refreshed on 23 September 2026 using the author's replacement captures.
+
 ![Overview](../dashboard/screenshots/01_overview.png)
 ![Cohorts and segments](../dashboard/screenshots/02_cohorts_segments.png)
 ![Model reliability](../dashboard/screenshots/03_model_reliability.png)
 ![Commercial sensitivity](../dashboard/screenshots/04_commercial_sensitivity.png)
 ![Guarded explorer](../dashboard/screenshots/05_scenario_explorer.png)
-![Selected scenario](../dashboard/screenshots/05b_selected_baseline.png)
+![Selected scenario](../dashboard/screenshots/05_scenario_selected_baseline.png)
 ![Experiment and gates](../dashboard/screenshots/06_experiment_gates.png)
 
 ## Scope and next step
